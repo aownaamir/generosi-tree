@@ -1,0 +1,26 @@
+import { useState } from "react";
+import SignInForm from "../ui/SignInForm";
+import SignUpForm from "../ui/SignUpForm";
+import WelcomePortal from "./WelcomePortal";
+
+function Portal() {
+  const [isSignIn, setIsSignIn] = useState(true);
+  return (
+    <div className="lg:h-screen pt-20 lg:pt-0 flex justify-center items-center">
+      <div className="w-full lg:w-[800px] lg:h-[400px] border border-black flex flex-col lg:flex-row justify-center items-center">
+        {isSignIn ? (
+          <WelcomePortal isSignIn={isSignIn} setIsSignIn={setIsSignIn} />
+        ) : (
+          <SignUpForm />
+        )}
+        {isSignIn ? (
+          <SignInForm />
+        ) : (
+          <WelcomePortal isSignIn={isSignIn} setIsSignIn={setIsSignIn} />
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default Portal;
