@@ -4,7 +4,7 @@ function SignUpForm() {
   }
   return (
     <form
-      className="w-full h-[300px] lg:w-[50%] lg:h-full border-b lg:border-b-0 lg:border-r border-black  flex flex-col gap-3 justify-center items-center"
+      className="w-full h-[300px] lg:w-[50%] lg:h-full border-t lg:border-t-0 lg:border-r border-black  flex flex-col gap-3 justify-center items-center"
       onSubmit={handleSubmit}
     >
       <h2 className="mb-3 text-center font-bold text-2xl">Sign Up</h2>
