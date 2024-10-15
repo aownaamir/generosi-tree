@@ -9,7 +9,7 @@ function Footer() {
       <div className="grid gap-y-20 lg:gap-0 grid-cols-1 lg:grid-cols-4">
         <div className=" flex flex-col justify-center items-center">
           <div>
-            <img src={logo} alt="logo" className="w-[200px] h-[200px]" />
+            <img src={logo} alt="logo" className="lg:w-[200px] h-[200px]" />
           </div>
           <ul className="flex gap-2">
             <li className=" flex justify-center items-center  rounded-md">
@@ -27,8 +27,8 @@ function Footer() {
           </ul>
         </div>
         <div className=" flex flex-col justify-center items-center gap-3">
-          <h1 className="text-2xl  pb-1 w-[200px]">FAQs</h1>
-          <ul className="flex flex-col w-[200px] gap-2">
+          <h1 className="text-2xl  pb-1 lg:w-[200px]">FAQs</h1>
+          <ul className="flex flex-col lg:w-[200px] gap-2">
             <li>Point 1</li>
             <li>Point 2</li>
             <li>Point 3</li>
@@ -36,8 +36,8 @@ function Footer() {
           </ul>
         </div>
         <div className=" flex flex-col justify-center items-center gap-3">
-          <h1 className="text-2xl  pb-1 w-[200px]">FAQs</h1>
-          <ul className="flex flex-col w-[200px] gap-2">
+          <h1 className="text-2xl  pb-1 lg:w-[200px]">FAQs</h1>
+          <ul className="flex flex-col lg:w-[200px] gap-2">
             <li>Point 1</li>
             <li>Point 2</li>
             <li>Point 3</li>
@@ -45,8 +45,8 @@ function Footer() {
           </ul>
         </div>
         <div className=" flex flex-col justify-center items-center gap-3">
-          <h1 className="text-2xl  pb-1 w-[200px]">FAQs</h1>
-          <ul className="flex flex-col w-[200px] gap-2">
+          <h1 className="text-2xl  pb-1 lg:w-[200px]">FAQs</h1>
+          <ul className="flex flex-col lg:w-[200px] gap-2">
             <li>Point 1</li>
             <li>Point 2</li>
             <li>Point 3</li>

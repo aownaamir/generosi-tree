@@ -31,7 +31,7 @@ const steps = [
 
 function JoinTeam() {
   return (
-    <div className="px-5 flex items-center justify-center">
+    <div className="flex items-center justify-center">
       <div className="flex flex-col lg:flex-row lg:gap-7">
         {steps.map((item) => (
           <div

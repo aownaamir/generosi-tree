@@ -3,7 +3,7 @@ import Handshake from "../svgs/Handshake";
 import Houses from "../svgs/Houses";
 function AboutUs() {
   return (
-    <div className="my-40 px-10 flex justify-center items-center">
+    <div className="my-40 flex justify-center items-center">
       <div className=" grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-10">
         <div className="w-full lg:w-[500px] lg:h-[380px] flex items-center">
           <p className="text-justify">

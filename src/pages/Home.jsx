@@ -8,7 +8,7 @@ import Navbar from "../ui/Navbar";
 
 function Home() {
   return (
-    <div>
+    <div className="px-5">
       <Hero />
       <Departments />
       <AboutUs />

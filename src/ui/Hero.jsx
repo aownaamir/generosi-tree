@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div className="w-full lg:h-screen px-5 flex flex-col relative">
+    <div className="w-full lg:h-screen flex flex-col relative">
       <div className="w-full mt-20 lg:mt-0 lg:w-[520px] flex flex-col items-center lg:items-start gap-4 lg:absolute lg:top-[120px] lg:left-[100px] text-center lg:text-left">
         <h1 className="leading-[1.2] font-bold text-4xl lg:text-5xl">
           Rooted in giving, branching out in hope
