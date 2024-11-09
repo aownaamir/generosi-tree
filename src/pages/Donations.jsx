@@ -1,5 +1,5 @@
 import { donations } from "../data/data";
-import DonationBox from "./DonationBox";
+import DonationBox from "../ui/DonationBox";
 function Donations() {
   return (
     <div className="flex justify-center items-center px-5">

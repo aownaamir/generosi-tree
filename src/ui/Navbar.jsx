@@ -1,5 +1,4 @@
-import logo from "/images/logo.png";
-import logoCircle from "/images/logo-circle.png";
+import logo from "/images/logo-circle-textless.png";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -7,7 +6,7 @@ function Navbar() {
     <div className="w-full pt-5 h-20 px-5 lg:px-10 flex justify-between items-center">
       <div className="flex ">
         <Link to="/">
-          <img src={logoCircle} alt="logo" width={70} height={70} />
+          <img src={logo} alt="logo" width={70} height={70} />
         </Link>
       </div>
       <ul className="flex lg:gap-10 text-sm justify-center items-center">

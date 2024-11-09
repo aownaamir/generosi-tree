@@ -2,14 +2,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Portal from "./pages/Portal";
 import AppLayout from "./pages/AppLayout";
-import Donations from "./ui/Donations";
-import Departments from "./ui/Departments";
+import Donations from "./pages/Donations";
+import Departments from "./pages/Departments";
+import DonationForm from "./pages/DonationForm";
 
 function App() {
   const router = createBrowserRouter([
     {
       element: <AppLayout />,
-      //   //   errorElement: <Error />,
       children: [
         {
           path: "/",
@@ -27,27 +27,10 @@ function App() {
           path: "/departments",
           element: <Departments />,
         },
-        //   // {
-        //   //   path: "/portal",
-        //   //   element: <LoginSignUp />,
-        //   // },
-        //   // {
-        //   //   path: "/mentorship",
-        //   //   element: <Mentorship />,
-        //   // },
-        //   // {
-        //   //   path: "/networking",
-        //   //   element: <Networking />,
-        //   // },
-        //   // {
-        //   //   path: "/resources",
-        //   //   element: <Resources />,
-        //   // },
-        //   // {
-        //   //   path: "/testing",
-        //   //   element: <Testing />,
-
-        //   // },
+        {
+          path: "/donate",
+          element: <DonationForm />,
+        },
       ],
     },
   ]);

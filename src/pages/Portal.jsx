@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SignInForm from "../ui/SignInForm";
 import SignUpForm from "../ui/SignUpForm";
-import WelcomePortal from "./WelcomePortal";
+import WelcomePortal from "../ui/WelcomePortal";
 
 function Portal() {
   const [isSignIn, setIsSignIn] = useState(true);

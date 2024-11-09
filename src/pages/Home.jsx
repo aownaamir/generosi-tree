@@ -1,16 +1,14 @@
 import AboutUs from "../ui/AboutUs";
-import Departments from "../ui/Departments";
-import Footer from "../ui/Footer";
+import DepartmentsSection from "../ui/DepartmentsSection";
 import Hero from "../ui/Hero";
 import JoinTeam from "../ui/JoinTeam";
 import Links from "../ui/Links";
-import Navbar from "../ui/Navbar";
 
 function Home() {
   return (
     <div className="px-5">
       <Hero />
-      <Departments />
+      <DepartmentsSection />
       <AboutUs />
       <JoinTeam />
       <Links />
