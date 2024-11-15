@@ -1,4 +1,11 @@
 import d1 from "/images/Palastine.jpg";
+import { IoMailOutline } from "react-icons/io5";
+import { TbWorld } from "react-icons/tb";
+import { CiLinkedin } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
+
+import { CiSquareQuestion } from "react-icons/ci";
+
 const departments = [
   {
     id: 0,
@@ -82,5 +89,31 @@ const donations = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
   },
 ];
+const links = [
+  {
+    title: "linkedin",
+    name: "GenerosiTree",
+    url: "https://www.linkedin.com/company/generositree/",
+    icon: CiLinkedin,
+  },
+  {
+    title: "instagram",
+    name: "generositree_official",
+    url: "https://www.instagram.com/generositree_official/?utm_source=ig_web_button_share_sheet",
+    icon: FaInstagram,
+  },
+  {
+    title: "gmail",
+    name: "generositreeofficial@gmail.com",
+    url: "",
+    icon: IoMailOutline,
+  },
+  {
+    title: "faqs",
+    name: "FAQs",
+    url: "",
+    icon: CiSquareQuestion,
+  },
+];
 
-export { departments, donations };
+export { departments, donations, links };

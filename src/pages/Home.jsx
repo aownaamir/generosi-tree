@@ -6,12 +6,12 @@ import Links from "../ui/Links";
 
 function Home() {
   return (
-    <div className="px-5">
+    <div className="px-7 lg:px-10">
       <Hero />
       <DepartmentsSection />
       <AboutUs />
       <JoinTeam />
-      <Links />
+      {/* <Links /> */}
     </div>
   );
 }
