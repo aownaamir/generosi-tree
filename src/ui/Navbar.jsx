@@ -7,7 +7,7 @@ function Navbar() {
     <div className="w-full h-28 px-7 lg:px-10 flex justify-between items-center">
       <div className="flex ">
         <Link to="/">
-          <img src={logoS} alt="logo" width={85} height={85} />
+          <img src={logoC} alt="logo" width={85} height={85} />
         </Link>
       </div>
       <ul className="flex lg:gap-10 text-sm justify-center items-center">
