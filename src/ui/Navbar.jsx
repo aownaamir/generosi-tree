@@ -21,6 +21,9 @@ function Navbar() {
           <Link to="departments">
             <li>Departments</li>
           </Link>
+          <a href="#footer">
+            <li>Contact</li>
+          </a>
         </div>
         <Link to="portal">
           <button className="w-[75px] text-sm h-9 border border-black rounded-lg">

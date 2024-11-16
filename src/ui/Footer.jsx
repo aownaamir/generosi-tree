@@ -3,7 +3,10 @@ import logoS from "/images/logo-square.png";
 import { links } from "../data/data";
 function Footer() {
   return (
-    <div className="mt-20 mb-10 px-5 lg:h-[300px] flex justify-center items-center">
+    <div
+      id="footer"
+      className="mt-20 mb-10 px-5 lg:h-[300px] flex justify-center items-center"
+    >
       <div className="grid lg:gap-10 grid-cols-1 lg:grid-cols-6">
         <div className="flex flex-col justify-center items-center">
           <div>
