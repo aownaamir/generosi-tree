@@ -6,7 +6,7 @@ import WelcomePortal from "../ui/WelcomePortal";
 function Portal() {
   const [isSignIn, setIsSignIn] = useState(true);
   return (
-    <div className="pt-20 lg:pt-20 flex justify-center items-center px-5">
+    <div className="px-7 lg:px-10 pt-20 lg:pt-20 flex justify-center items-center">
       <div className="lg:hidden w-full lg:w-[800px] lg:h-[400px] border border-black flex flex-col lg:flex-row justify-center items-center">
         <WelcomePortal isSignIn={isSignIn} setIsSignIn={setIsSignIn} />
         {isSignIn ? <SignInForm /> : <SignUpForm />}

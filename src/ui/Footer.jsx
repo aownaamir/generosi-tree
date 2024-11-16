@@ -12,7 +12,11 @@ function Footer() {
         </div>
 
         {links.map((item, i) => (
-          <a key={i} href={item.url} target="_blank">
+          <a
+            key={i}
+            href={item.title === "gmail" ? "" : item.url}
+            target={item.title === "gmail" ? "_parent" : "_blank"}
+          >
             <div className="flex flex-col justify-center items-center gap-3 w-[180px] h-[180px]">
               <item.icon className="text-[60px]" />
               <p className="">{item.name}</p>

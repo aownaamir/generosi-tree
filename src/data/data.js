@@ -1,47 +1,58 @@
 import d1 from "/images/Palastine.jpg";
+import Hayyan from "/images/Hayyan.jpeg";
+import Aown from "/images/Aown.jpg";
 import { IoMailOutline } from "react-icons/io5";
-import { TbWorld } from "react-icons/tb";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 
 import { CiSquareQuestion } from "react-icons/ci";
 
+const team = [
+  { id: 0, name: "Hayyan Khan", designation: "Chemical Engr.", img: Hayyan },
+  { id: 0, name: "Aown Aamir", designation: "Electrical Engr.", img: Aown },
+];
 const departments = [
   {
     id: 0,
     name: "Donations",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
+    url: "/donations",
   },
   {
     id: 1,
     name: "Petitions",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
+    url: "/petitions",
   },
   {
     id: 2,
     name: "Awareness",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
+    url: "/awareness",
   },
   {
     id: 3,
     name: "Community Service",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
+    url: "/communityservice",
   },
   {
     id: 4,
     name: "Team Volunteer",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
+    url: "/teamvolunteer",
   },
   {
     id: 5,
-    name: "Team Volunteer",
+    name: "Miscellaneous",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
+    url: "/miscellaneous",
   },
 ];
 
@@ -116,4 +127,4 @@ const links = [
   },
 ];
 
-export { departments, donations, links };
+export { departments, donations, links, team };
