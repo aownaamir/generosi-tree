@@ -4,7 +4,7 @@ import Aown from "/images/Aown.jpg";
 import { IoMailOutline } from "react-icons/io5";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
-
+import { FaWhatsapp } from "react-icons/fa";
 import { CiSquareQuestion } from "react-icons/ci";
 
 const team = [
@@ -115,9 +115,15 @@ const links = [
   },
   {
     title: "gmail",
-    name: "generositreeofficial@gmail.com",
+    name: "generositreeofficial @gmail.com",
     url: "",
     icon: IoMailOutline,
+  },
+  {
+    title: "whatsapp",
+    name: "GenerosiTree Official 🌳",
+    url: "https://whatsapp.com/channel/0029Vax7LQvAzNbsNtags90S ",
+    icon: FaWhatsapp,
   },
   {
     title: "faqs",
