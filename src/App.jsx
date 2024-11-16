@@ -9,6 +9,7 @@ import Petitions from "./pages/Petitions";
 import Awareness from "./pages/Awareness";
 import CommunityService from "./pages/CommunityService";
 import TeamVolunteer from "./pages/TeamVolunteer";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   const router = createBrowserRouter([
@@ -50,6 +51,10 @@ function App() {
         {
           path: "/teamvolunteer",
           element: <TeamVolunteer />,
+        },
+        {
+          path: "/dashboard",
+          element: <Dashboard />,
         },
       ],
     },

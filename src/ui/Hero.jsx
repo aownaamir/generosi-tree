@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Hero() {
   return (
     <div className="w-full lg:h-[80vh] flex flex-col lg:flex-row relative  justify-between items-center gap-10 lg:gap-0">
@@ -11,9 +13,11 @@ function Hero() {
           Pellentesque tortor ex, mattis non diam non, condimentum interdum
           lorem.
         </p>
-        <button className="w-[130px] h-10 rounded-md border border-black">
-          Donate
-        </button>
+        <Link to="/donations">
+          <button className="w-[130px] h-10 rounded-md border border-black">
+            Donate
+          </button>
+        </Link>
       </div>
       <div className="">
         <div className="grid grid-cols-2 gap-6">

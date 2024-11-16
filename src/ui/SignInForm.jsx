@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function SignInForm() {
   function handleSubmit(e) {
     e.preventDefault();
@@ -19,9 +21,11 @@ function SignInForm() {
       <p className="text-center text-slate-400 text-xs">
         Forgot your password?
       </p>
-      <button className="w-[100px] h-[40px] rounded-full border border-black text-sm">
-        Sign In
-      </button>
+      <Link to="/dashboard">
+        <button className="w-[100px] h-[40px] rounded-full border border-black text-sm">
+          Sign In
+        </button>
+      </Link>
     </form>
   );
 }
