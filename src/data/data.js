@@ -1,6 +1,6 @@
-import d1 from "/images/Palastine.jpg";
 import Hayyan from "/images/Hayyan.jpeg";
 import Aown from "/images/Aown.jpg";
+import d1 from "/images/winterdrive.jpg";
 import { IoMailOutline } from "react-icons/io5";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
@@ -68,14 +68,14 @@ const donations = [
   {
     id: 1,
     title: "Coming Soon",
-    img: d1,
+    img: "",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
   },
   {
     id: 2,
     title: "Coming Soon",
-    img: d1,
+    img: "",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
   },
