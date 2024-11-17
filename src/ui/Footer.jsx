@@ -21,8 +21,10 @@ function Footer() {
             target={item.title === "gmail" ? "_parent" : "_blank"}
           >
             <div className="flex flex-col justify-center items-center gap-3 w-[150px] h-[150px]">
-              <item.icon className="text-[60px]" />
-              <p className="break-words text-center">{item.name}</p>
+              <item.icon className="text-[60px] " />
+              <p className="break-words text-center text-theme-brown font-[550]">
+                {item.name}
+              </p>
             </div>
           </a>
         ))}

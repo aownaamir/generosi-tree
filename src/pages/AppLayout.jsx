@@ -4,7 +4,7 @@ import Navbar from "../ui/Navbar";
 
 function AppLayout() {
   return (
-    <div>
+    <div className="relative bg-theme-background">
       <Navbar />
       <Outlet />
       <Footer />
