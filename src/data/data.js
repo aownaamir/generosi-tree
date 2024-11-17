@@ -59,42 +59,22 @@ const departments = [
 const donations = [
   {
     id: 0,
-    title: "Help Ghaza",
+    title: "Winter 2024 Donation Drive",
     img: d1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
+      "This winter, help the community by donationg clothes, supporting education, and spreading warmth!",
+    url: "https://forms.gle/6hk8z7wfFvzaHZGr6",
   },
   {
     id: 1,
-    title: "Help Ghaza",
+    title: "Coming Soon",
     img: d1,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
   },
   {
     id: 2,
-    title: "Help Ghaza",
-    img: d1,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
-  },
-  {
-    id: 3,
-    title: "Help Ghaza",
-    img: d1,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
-  },
-  {
-    id: 4,
-    title: "Help Ghaza",
-    img: d1,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
-  },
-  {
-    id: 5,
-    title: "Help Ghaza",
+    title: "Coming Soon",
     img: d1,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",

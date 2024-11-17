@@ -10,11 +10,13 @@ function DonationBox({ item }) {
         <h2>{item.title}</h2>
         <p className="text-sm text-center">{item.description}</p>
 
-        <Link to="/donate">
+        {/* <Link to="/donate"> */}
+        <a href={item.url} target="_blank">
           <button className="w-[80px] h-10 border border-black rounded-[5px]">
             Donate
           </button>
-        </Link>
+        </a>
+        {/* </Link> */}
       </div>
     </div>
   );
