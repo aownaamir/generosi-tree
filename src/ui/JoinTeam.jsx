@@ -31,16 +31,16 @@ const steps = [
 
 function JoinTeam() {
   return (
-    <div className="px-3 lg:px-8 flex flex-col items-center justify-center">
+    <div className="px-5 lg:px-8 flex flex-col items-center justify-center">
       <h1 className="text-4xl mt-10 mb-20 poppins">How do we work?</h1>
       <div className="flex flex-col lg:flex-row lg:gap-7">
         {steps.map((item) => (
           <div
             key={item.id}
-            className="w-full lg:w-[250px] h-[360px] lg:h-[300px] px-4  flex flex-col justify-start items-center"
+            className="w-full lg:w-[250px] h-[300px] lg:h-[300px] px-4  flex flex-col justify-start items-center"
           >
             <div
-              className={`w-[180px] h-[180px] lg:w-[120px] lg:h-[120px] border-4 border-theme-brown rounded-full flex justify-center items-center text-5xl text-theme-green font-semibold my-2 join-shadow`}
+              className={`w-[130px] h-[130px] lg:w-[120px] lg:h-[120px] border-4 border-theme-brown rounded-full flex justify-center items-center text-5xl text-theme-green font-semibold my-2 join-shadow`}
             >
               {item.step}
             </div>

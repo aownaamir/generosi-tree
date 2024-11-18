@@ -11,7 +11,7 @@ function PetitionDetails({ setStep }) {
             id="name"
             name="name"
             required
-            className="w-full border-b-2 border-black focus:outline-none"
+            className="w-full border-b-2 border-black focus:outline-none bg-transparent"
           />
         </div>
         <div className="w-[200px] h-[58px] flex flex-col gap-3">
@@ -23,7 +23,7 @@ function PetitionDetails({ setStep }) {
             id="name"
             name="name"
             required
-            className="w-full border-b-2 border-black focus:outline-none"
+            className="w-full border-b-2 border-black focus:outline-none bg-transparent"
           />
         </div>
       </div>
@@ -37,7 +37,7 @@ function PetitionDetails({ setStep }) {
             id="name"
             name="name"
             required
-            className="w-full border-b-2 border-black  focus:outline-none"
+            className="w-full border-b-2 border-black  focus:outline-none bg-transparent"
           />
         </div>
         <div className="w-[200px] h-[58px] flex flex-col gap-3">
@@ -49,7 +49,7 @@ function PetitionDetails({ setStep }) {
             id="name"
             name="name"
             required
-            className="w-full border-b-2 border-black focus:outline-none"
+            className="w-full border-b-2 border-black focus:outline-none bg-transparent"
           />
         </div>
       </div>
@@ -63,7 +63,7 @@ function PetitionDetails({ setStep }) {
             id="name"
             name="name"
             required
-            className="w-full border-b-2 border-black focus:outline-none"
+            className="w-full border-b-2 border-black focus:outline-none bg-transparent"
           />
         </div>
         <div className="w-[200px] h-[58px] flex gap-3">
@@ -83,7 +83,7 @@ function PetitionDetails({ setStep }) {
       <div className="w-full flex flex-col lg:flex-row  justify-between items-center">
         <div className="w-[200px] h-[58px] flex justify-center items-end">
           <button
-            className="w-full h-10 border border-black"
+            className="w-full h-10 bg-green-600 text-slate-50 font-[550]"
             onClick={() => setStep((pV) => pV - 1)}
           >
             Back
@@ -91,7 +91,7 @@ function PetitionDetails({ setStep }) {
         </div>
         <div className="w-[200px] h-[58px] flex justify-center items-end">
           <button
-            className="w-full h-10 border border-black"
+            className="w-full h-10 bg-green-600 text-slate-50 font-[550]"
             onClick={() => setStep((pV) => pV + 1)}
           >
             Next

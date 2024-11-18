@@ -12,10 +12,39 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { CiSquareQuestion } from "react-icons/ci";
+import QMark from "../svgs/QMark";
+import Goal from "../svgs/Goal";
+import Handshake from "../svgs/Handshake";
 
 const team = [
   { id: 0, name: "Hayyan Khan", designation: "Chemical Engr.", img: Hayyan },
   { id: 0, name: "Aown Aamir", designation: "Electrical Engr.", img: Aown },
+];
+const aboutUs = [
+  {
+    id: 0,
+    title: "What's GenerosiTree?",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin nulla ac ligula feugiat consequat. Curabitur et enim iaculis nunc egestas lobortis quis eget sem. Mauris ultrices ac felis quis ornare.Cras venenatis sapien vitae tempus vehicula. Mauris sollicitudin ante at libero lobortis, id lobortis metus ultrices. Sed sed elit mollis mi dictum volutpat.",
+    svg: QMark,
+    inverted: false,
+  },
+  {
+    id: 1,
+    title: "Our Goal",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin nulla ac ligula feugiat consequat. Curabitur et enim iaculis nunc egestas lobortis quis eget sem. Mauris ultrices ac felis quis ornare.Cras venenatis sapien vitae tempus vehicula. Mauris sollicitudin ante at libero lobortis, id lobortis metus ultrices. Sed sed elit mollis mi dictum volutpat.",
+    svg: Goal,
+    inverted: true,
+  },
+  {
+    id: 2,
+    title: "Your Contribution",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin nulla ac ligula feugiat consequat. Curabitur et enim iaculis nunc egestas lobortis quis eget sem. Mauris ultrices ac felis quis ornare.Cras venenatis sapien vitae tempus vehicula. Mauris sollicitudin ante at libero lobortis, id lobortis metus ultrices. Sed sed elit mollis mi dictum volutpat.",
+    svg: Handshake,
+    inverted: false,
+  },
 ];
 const departments = [
   {
@@ -125,4 +154,4 @@ const links = [
   },
 ];
 
-export { departments, donations, links, team };
+export { departments, donations, links, team, aboutUs };

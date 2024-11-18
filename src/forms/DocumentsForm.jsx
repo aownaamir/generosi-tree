@@ -53,14 +53,14 @@ function DocumentsForm({ setStep }) {
       <div className=" w-full flex flex-col lg:flex-row justify-between items-center">
         <div className="w-[200px] h-[58px] flex justify-center items-end">
           <button
-            className="w-full h-10 border border-black box-border"
+            className="w-full h-10  bg-green-600 text-slate-50 font-[550] box-border"
             onClick={() => setStep((pV) => pV - 1)}
           >
             Back
           </button>
         </div>
         <div className="w-[200px] h-[58px] flex justify-center items-end">
-          <button className="w-full h-10 border border-black box-border">
+          <button className="w-full h-10  bg-green-600 text-slate-50 font-[550] box-border">
             Submit
           </button>
         </div>

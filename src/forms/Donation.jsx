@@ -11,7 +11,7 @@ function Donation() {
             id="name"
             name="name"
             required
-            className="w-full border-b-2 border-black focus:outline-none"
+            className="w-full border-b-2 border-black focus:outline-none bg-transparent"
           />
         </div>
         <div className="w-[180px] h-[58px] flex flex-col gap-2">
@@ -23,7 +23,7 @@ function Donation() {
             id="name"
             name="name"
             required
-            className="w-full border-b-2 border-black focus:outline-none"
+            className="w-full border-b-2 border-black focus:outline-none bg-transparent"
           />
         </div>
       </div>
@@ -37,7 +37,7 @@ function Donation() {
             id="name"
             name="name"
             required
-            className="w-full border-b-2 border-black focus:outline-none"
+            className="w-full border-b-2 border-black focus:outline-none bg-transparent"
           />
         </div>
         <div className="w-[180px] h-[58px] flex flex-col gap-2">
@@ -49,7 +49,7 @@ function Donation() {
             id="name"
             name="name"
             required
-            className="w-full border-b-2 border-black focus:outline-none"
+            className="w-full border-b-2 border-black focus:outline-none bg-transparent"
           />
         </div>
       </div>
@@ -63,7 +63,7 @@ function Donation() {
             id="name"
             name="name"
             required
-            className="w-full border-b-2 border-black focus:outline-none"
+            className="w-full border-b-2 border-black focus:outline-none bg-transparent"
           />
         </div>
         <div className="w-[180px] h-[58px] flex flex-col gap-2">
@@ -75,7 +75,7 @@ function Donation() {
             id="name"
             name="name"
             required
-            className="w-full border-b-2 border-black focus:outline-none"
+            className="w-full border-b-2 border-black focus:outline-none bg-transparent"
           />
         </div>
       </div>
@@ -89,11 +89,13 @@ function Donation() {
             id="name"
             name="name"
             required
-            className="w-full border-b-2 border-black focus:outline-none"
+            className="w-full border-b-2 border-black focus:outline-none bg-transparent"
           />
         </div>
         <div className="w-[180px] h-[58px] flex justify-center items-end">
-          <button className="w-full h-10 border border-black">Donate</button>
+          <button className="w-full h-10  bg-green-600 text-slate-50 font-[550]">
+            Donate
+          </button>
         </div>
       </div>
     </form>
