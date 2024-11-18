@@ -10,6 +10,7 @@ module.exports = {
           c: "#FFE4B5",
           d: "#FFFACD",
           background: "#FAFAD2",
+          green: "rgb(22,163,74)",
         },
       },
       fontFamily: {

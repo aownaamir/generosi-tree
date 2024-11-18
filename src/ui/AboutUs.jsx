@@ -5,53 +5,53 @@ function AboutUs() {
   return (
     <div className="my-40 flex justify-center items-center">
       <div className=" grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-10">
-        <div className="w-full lg:w-[500px] lg:h-[380px] flex items-center">
-          <p className="text-justify">
+        <div className="w-full lg:w-[500px] lg:h-[300px] flex flex-col gap-7 items-center justify-center ">
+          <p className="text-3xl text-theme-brown">
+            What's Generosi<span className="text-theme-green">Tree?</span>
+          </p>
+          <p className="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+            sollicitudin nulla ac ligula feugiat consequat. Curabitur et enim
+            iaculis nunc egestas lobortis quis eget sem. Mauris ultrices ac
+            felis quis ornare.Cras venenatis sapien vitae tempus vehicula.
+            Mauris sollicitudin ante at libero lobortis, id lobortis metus
+            ultrices. Sed sed elit mollis mi dictum volutpat.
+          </p>
+        </div>
+        <div className="w-full lg:w-[500px] lg:h-[300px] flex items-center justify-center ">
+          <QMark size="150px" />
+        </div>
+        <div className="w-full lg:w-[500px] lg:h-[300px] flex items-center overflow-hidden justify-center ">
+          <Handshake size="150px" />
+        </div>
+        <div className="w-full lg:w-[500px] lg:h-[300px] flex flex-col gap-7 items-center justify-center ">
+          <p className="text-3xl text-theme-brown">
+            Our <span className="text-theme-green">Goal</span>
+          </p>
+          <p className="">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
             sollicitudin nulla ac ligula feugiat consequat. Curabitur et enim
             iaculis nunc egestas lobortis quis eget sem. Mauris ultrices ac
             felis quis ornare. Cras venenatis sapien vitae tempus vehicula.
             Mauris sollicitudin ante at libero lobortis, id lobortis metus
-            ultrices. Sed sed elit mollis mi dictum volutpat. Integer ac porta
-            ipsum. Fusce accumsan mattis venenatis. Fusce hendrerit lobortis
-            dignissim. Aenean rutrum, ipsum in dapibus varius, urna dolor congue
-            justo, vel pellentesque.
+            ultrices. Sed sed elit mollis mi dictum volutpat.
           </p>
         </div>
-        <div className="w-full lg:w-[500px] lg:h-[380px] flex justify-center items-center">
-          <QMark size="280px" />
-        </div>
-        <div className="w-full lg:w-[500px] lg:h-[380px] flex justify-center items-center overflow-hidden">
-          <Handshake size="280px" />
-        </div>
-        <div className="w-full lg:w-[500px] lg:h-[380px] flex items-center">
-          <p className="text-justify">
+        <div className="w-full lg:w-[500px] lg:h-[300px] flex flex-col gap-7 items-center justify-center ">
+          <p className="text-3xl text-theme-brown">
+            Your <span className="text-theme-green">Contribution</span>
+          </p>
+          <p className="">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
             sollicitudin nulla ac ligula feugiat consequat. Curabitur et enim
             iaculis nunc egestas lobortis quis eget sem. Mauris ultrices ac
             felis quis ornare. Cras venenatis sapien vitae tempus vehicula.
             Mauris sollicitudin ante at libero lobortis, id lobortis metus
-            ultrices. Sed sed elit mollis mi dictum volutpat. Integer ac porta
-            ipsum. Fusce accumsan mattis venenatis. Fusce hendrerit lobortis
-            dignissim. Aenean rutrum, ipsum in dapibus varius, urna dolor congue
-            justo, vel pellentesque.
+            ultrices. Sed sed elit mollis mi dictum volutpat.
           </p>
         </div>
-        <div className="w-full lg:w-[500px] lg:h-[380px] flex items-center">
-          <p className="text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-            sollicitudin nulla ac ligula feugiat consequat. Curabitur et enim
-            iaculis nunc egestas lobortis quis eget sem. Mauris ultrices ac
-            felis quis ornare. Cras venenatis sapien vitae tempus vehicula.
-            Mauris sollicitudin ante at libero lobortis, id lobortis metus
-            ultrices. Sed sed elit mollis mi dictum volutpat. Integer ac porta
-            ipsum. Fusce accumsan mattis venenatis. Fusce hendrerit lobortis
-            dignissim. Aenean rutrum, ipsum in dapibus varius, urna dolor congue
-            justo, vel pellentesque.
-          </p>
-        </div>
-        <div className="w-full lg:w-[500px] lg:h-[380px] flex justify-center items-center">
-          <Houses size="280px" />
+        <div className="w-full lg:w-[500px] lg:h-[300px] flex justify-center items-center">
+          <Houses size="150px" />
         </div>
       </div>
     </div>

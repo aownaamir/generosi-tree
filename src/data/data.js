@@ -1,6 +1,12 @@
 import Hayyan from "/images/Hayyan.jpeg";
 import Aown from "/images/Aown.jpg";
 import d1 from "/images/winterdrive.jpg";
+import Donations from "../svgs/Donations";
+import Petitions from "../svgs/Petitions";
+import Awareness from "../svgs/Awareness";
+import CommunityService from "../svgs/CommunityService";
+import TeamVolunteer from "../svgs/TeamVolunteer";
+import House from "../svgs/House";
 import { IoMailOutline } from "react-icons/io5";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
@@ -15,6 +21,7 @@ const departments = [
   {
     id: 0,
     name: "Donations",
+    svg: Donations,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/donations",
@@ -22,6 +29,7 @@ const departments = [
   {
     id: 1,
     name: "Petitions",
+    svg: Petitions,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/petitions",
@@ -29,6 +37,7 @@ const departments = [
   {
     id: 2,
     name: "Awareness",
+    svg: Awareness,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/awareness",
@@ -36,6 +45,7 @@ const departments = [
   {
     id: 3,
     name: "Community Service",
+    svg: CommunityService,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/communityservice",
@@ -43,6 +53,7 @@ const departments = [
   {
     id: 4,
     name: "Team Volunteer",
+    svg: TeamVolunteer,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/teamvolunteer",
@@ -50,6 +61,7 @@ const departments = [
   {
     id: 5,
     name: "Miscellaneous",
+    svg: House,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/miscellaneous",
