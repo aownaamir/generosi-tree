@@ -2,57 +2,49 @@ const steps = [
   {
     id: 0,
     step: 1,
+    title: "Search",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin nulla ac ligula feugiat consequat. Curabitur et enimiaculis nunc egestas lobortis quis eget sem.",
-    inverted: false,
+      " We find cases around the internet, searching for people facing some kind of emergency situation.",
   },
   {
     id: 1,
     step: 2,
+    title: "Verification",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin nulla ac ligula feugiat consequat. Curabitur et enimiaculis nunc egestas lobortis quis eget sem.",
-    inverted: true,
+      " In this step, we verify the cases through documents or by contacting relevent people.",
   },
   {
     id: 2,
     step: 3,
+    title: "Compeigns",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin nulla ac ligula feugiat consequat. Curabitur et enimiaculis nunc egestas lobortis quis eget sem.",
-    inverted: false,
+      "Once verified, we publish the case on our website along with social media and do compeigns, try our best to meet the requirements.",
   },
   {
     id: 3,
     step: 4,
+    title: "Thanks",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin nulla ac ligula feugiat consequat. Curabitur et enimiaculis nunc egestas lobortis quis eget sem.",
-    inverted: true,
+      "Once the problem is resolved, we regard our clients with a GenerosiTree appreciation certificate.",
   },
 ];
 
 function JoinTeam() {
   return (
-    <div className="flex items-center justify-center">
+    <div className="px-3 lg:px-8 flex flex-col items-center justify-center">
+      <h1 className="text-4xl mt-10 mb-20 poppins">How do we work?</h1>
       <div className="flex flex-col lg:flex-row lg:gap-7">
         {steps.map((item) => (
           <div
             key={item.id}
-            className="w-full lg:w-[250px] h-[360px] lg:h-[350px] px-4  flex flex-col justify-center items-center"
+            className="w-full lg:w-[250px] h-[360px] lg:h-[300px] px-4  flex flex-col justify-start items-center"
           >
             <div
-              className={`w-[180px] h-[180px] lg:w-[140px] lg:h-[140px] border-[7px] border-black rounded-full flex justify-center items-center text-6xl font-bold my-2 ${
-                item.inverted ? "lg:hidden" : ""
-              }`}
+              className={`w-[180px] h-[180px] lg:w-[120px] lg:h-[120px] border-4 border-theme-brown rounded-full flex justify-center items-center text-5xl text-theme-green font-semibold my-2 join-shadow`}
             >
               {item.step}
             </div>
-            <p className="text-md text-justify my-2">{item.description}</p>
-            <div
-              className={`w-[180px] h-[180px] lg:w-[140px] lg:h-[140px] border-[7px] border-black rounded-full  justify-center items-center text-6xl font-bold my-2 hidden ${
-                item.inverted ? "lg:flex" : ""
-              }`}
-            >
-              {item.step}
-            </div>
+            <p className="text-md text-center my-2">{item.description}</p>
           </div>
         ))}
       </div>

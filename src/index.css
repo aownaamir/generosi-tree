@@ -6,6 +6,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.dept-shadow {
+  box-shadow: 2px 2px 3px 1px grey;
+}
+.join-shadow {
+  box-shadow: 2px 2px 3px 1px grey;
+}
+
 /* title */
 .edu-au-vic-wa-nt-pre {
   font-family: "Edu AU VIC WA NT Pre", cursive;
