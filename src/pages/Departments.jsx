@@ -12,7 +12,9 @@ function Departments() {
               <div className="w-[110px] h-[110px] rounded-full border-4 border-theme-green flex justify-center items-center dept-shadow">
                 {<item.svg width="50px" height="50px" fill="#765341" />}
               </div>
-              <h1 className="text-theme-brown font-[550]">{item.name}</h1>
+              <h1 className="text-theme-brown font-[550] text-nowrap">
+                {item.name}
+              </h1>
             </div>
           </Link>
         ))}
