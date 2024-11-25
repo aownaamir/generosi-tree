@@ -42,3 +42,11 @@ html {
   font-weight: 500;
   font-style: normal;
 }
+
+.clip-container1 {
+  clip-path: polygon(30% 0, 100% 0, 70% 100%, 0% 100%);
+}
+
+.clip-container2 {
+  clip-path: polygon(30% 0, 100% 0, 70% 100%, 0% 100%);
+}

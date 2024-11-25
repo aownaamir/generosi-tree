@@ -105,6 +105,11 @@ const donations = [
     description:
       "This winter, help the community by donationg clothes, supporting education, and spreading warmth!",
     url: "https://forms.gle/6hk8z7wfFvzaHZGr6",
+    amount: 10000,
+    startDate: "Nov 2024",
+    endDate: "Dec 2024",
+    location: "Islamabad",
+    type: "Regular",
   },
   {
     id: 1,
@@ -112,6 +117,11 @@ const donations = [
     img: "",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
+    amount: "N/A",
+    startDate: "N/A",
+    endDate: "N/A",
+    location: "N/A",
+    type: "N/A",
   },
   {
     id: 2,
@@ -119,6 +129,11 @@ const donations = [
     img: "",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
+    amount: "N/A",
+    startDate: "N/A",
+    endDate: "N/A",
+    location: "N/A",
+    type: "N/A",
   },
 ];
 const links = [
@@ -130,19 +145,19 @@ const links = [
   },
   {
     title: "instagram",
-    name: "generositree_official",
+    name: "generositree _official",
     url: "https://www.instagram.com/generositree_official/?utm_source=ig_web_button_share_sheet",
     icon: FaInstagram,
   },
   {
     title: "gmail",
-    name: "generositreeofficial @gmail.com",
+    name: "generositree official@gmail.com",
     url: "",
     icon: IoMailOutline,
   },
   {
     title: "whatsapp",
-    name: "GenerosiTree Official 🌳",
+    name: "GenerosiTree Official",
     url: "https://whatsapp.com/channel/0029Vax7LQvAzNbsNtags90S ",
     icon: FaWhatsapp,
   },

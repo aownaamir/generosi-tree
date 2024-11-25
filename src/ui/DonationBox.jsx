@@ -1,22 +1,113 @@
 import { Link } from "react-router-dom";
+import Aown from "/images/Aown.jpg";
+import Palastine from "/images/Palastine.jpg";
+import { MdVerifiedUser } from "react-icons/md";
+import { FaMoneyBillWaveAlt } from "react-icons/fa";
+import { FaRegCalendar } from "react-icons/fa6";
+import { IoLocationSharp } from "react-icons/io5";
+import { CiCalendarDate } from "react-icons/ci";
+import { FaRegCalendarCheck } from "react-icons/fa6";
+import { TbCalendar } from "react-icons/tb";
+import { TbCalendarFilled } from "react-icons/tb";
+import { MdOutlineSettingsInputAntenna } from "react-icons/md";
+import { RiListSettingsFill } from "react-icons/ri";
 
 function DonationBox({ item }) {
   return (
-    <div className="w-[250px] h-[320px] relative  flex flex-col gap-1 items-center">
-      <div className="w-[140px] h-[120px] border-4 border-green-800 bg-white mx-auto overflow-hidden rounded-md absolute z-10">
-        <img src={item.img} alt={item.title} className="w-full h-full" />
+    <div className="w-[280px] h-[400px] border-2 border-theme-brown flex flex-col  overflow-hidden rounded-xl shadow-xl">
+      <div
+        className={`w-full h-[180px] flex relative border border-theme-brown`}
+      >
+        <div className="w-full h-full px-4 bg-green-600 flex justify-center items-center">
+          <p className="text-3xl text-center text-theme-background">
+            {item.title}
+          </p>
+        </div>
+        {/* <img src={Palastine} className="z-0 w-full h-full absolute" alt="" /> */}
+        {/* <div className="z-10 absolute inset-0 bg-green-600 opacity-10"></div> */}
+        {/* <div className="z-20 h-14 w-full -bottom-6 absolute bg-theme-green transform origin-bottom-left flex justify-center items-center">
+          <p className="font-[550] text-slate-50 text-lg">
+            Winter Donation Drive 2024
+          </p>
+        </div> */}
       </div>
-      <div className="p-2 absolute bottom-0 h-[240px] pt-10 flex  flex-col gap-[14px] border-4 border-theme-brown rounded-md justify-center items-center">
-        <h2 className="text-theme-brown font-[550]">{item.title}</h2>
-        <p className="text-sm text-center">{item.description}</p>
-
-        {/* <Link to="/donate"> */}
-        <a href={item.url} target="_blank">
-          <button className="w-[80px] h-10 bg-green-600 text-slate-50 font-[550] rounded-[5px]">
-            Donate
-          </button>
-        </a>
-        {/* </Link> */}
+      <div className="h-[220px]  relative w-full flex flex-col gap-[14px] border border-theme-brown items-center">
+        <div className="w-[240px] h-[160px] mt-10 relative">
+          <div className="w-full grid grid-cols-[90px,90px] justify-between">
+            <div className="w-[90px] h-[40px]">
+              <p className=" flex items-center gap-[7px]">
+                <span className="text-lg text-green-600">
+                  <MdVerifiedUser />
+                </span>
+                <span className="text-[13.2px] text-theme-brown">Verified</span>
+              </p>
+            </div>
+            <div className="w-[90px] h-[40px]">
+              <p className=" flex  gap-[7px]">
+                <span className="text-lg text-green-600">
+                  <FaMoneyBillWaveAlt />
+                </span>
+                <span className="text-[13.2px] text-theme-brown">
+                  Rs {item.amount}
+                </span>
+              </p>
+            </div>
+            <div className="w-[90px] h-[40px]">
+              <p className=" flex  gap-[7px]">
+                <span className="text-lg text-green-600">
+                  <TbCalendarFilled />
+                </span>
+                <span className="text-[13.2px] text-theme-brown">
+                  {item.startDate}
+                </span>
+              </p>
+            </div>
+            <div className="w-[90px] h-[40px]">
+              <p className=" flex  gap-[7px]">
+                <span className="text-lg text-green-600">
+                  <FaRegCalendarCheck />
+                </span>
+                <span className="text-[13.2px] text-theme-brown">
+                  {item.endDate}
+                </span>
+              </p>
+            </div>
+            <div className="w-[90px] h-[40px]">
+              <p className=" flex  gap-[7px]">
+                <span className="text-lg text-green-600">
+                  <IoLocationSharp />
+                </span>
+                <span className="text-[13.2px] text-theme-brown">
+                  {item.location}
+                </span>
+              </p>
+            </div>
+            <div className="w-[90px] h-[40px]">
+              <p className=" flex  gap-[7px]">
+                <span className="text-lg text-green-600">
+                  <RiListSettingsFill />
+                </span>
+                <span className="text-[13.2px] text-theme-brown">
+                  {item.type}
+                </span>
+              </p>
+            </div>
+            {/* <div className="w-[90px] h-[40px]">
+              <p className=" flex  gap-[7px]">
+                <span className="text-lg text-green-600">
+                  <IoLocationSharp />
+                </span>
+                <span className="text-[13.2px] text-theme-brown">Monthly</span>
+              </p>
+            </div> */}
+          </div>
+          <div className="w-full flex justify-between absolute bottom-0">
+            <p className="underline text-theme-brown">Details</p>
+            <button className="w-[80px] h-9 bg-green-600 text-slate-50 rounded-full">
+              Donate
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
