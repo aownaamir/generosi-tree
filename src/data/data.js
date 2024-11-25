@@ -15,6 +15,11 @@ import { CiSquareQuestion } from "react-icons/ci";
 import QMark from "../svgs/QMark";
 import Goal from "../svgs/Goal";
 import Handshake from "../svgs/Handshake";
+import Megaphone from "../svgs/Megaphone2";
+import Clipboard from "../svgs/Clipboard3";
+import Charity from "../svgs/Charity1";
+import Volunteer from "../svgs/Volunteer";
+import Miscellaneous from "../svgs/Miscellaneous";
 
 const team = [
   { id: 0, name: "Hayyan Khan", designation: "Chemical Engr.", img: Hayyan },
@@ -50,7 +55,7 @@ const departments = [
   {
     id: 0,
     name: "Donations",
-    svg: Donations,
+    svg: Charity,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/donations",
@@ -58,7 +63,7 @@ const departments = [
   {
     id: 1,
     name: "Petitions",
-    svg: Petitions,
+    svg: Clipboard,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/petitions",
@@ -66,7 +71,7 @@ const departments = [
   {
     id: 2,
     name: "Awareness",
-    svg: Awareness,
+    svg: Megaphone,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/awareness",
@@ -82,7 +87,7 @@ const departments = [
   {
     id: 4,
     name: "Team Volunteer",
-    svg: TeamVolunteer,
+    svg: Volunteer,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/teamvolunteer",
@@ -90,7 +95,7 @@ const departments = [
   {
     id: 5,
     name: "Miscellaneous",
-    svg: House,
+    svg: Miscellaneous,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/miscellaneous",
