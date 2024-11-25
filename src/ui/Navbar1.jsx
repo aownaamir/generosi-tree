@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="w-full h-24 px-5 lg:px-8 flex justify-between items-center  bg-transparent absolute z-10">
+    <div className="w-full py-3 px-5 lg:px-8 flex justify-between items-center bg-transparent absolute z-10">
       <Link to="/">
         <h2 className="text-[25px] edu-au-vic-wa-nt-pre">
           <span className="text-theme-brown">Generosi</span>
@@ -28,7 +28,7 @@ function Navbar() {
           </a>
         </div>
         <Link to="portal">
-          <button className="w-[78px] h-9 lg:w-[75px] :text-sm bg-green-600 text-slate-50 rounded-lg font-[550]">
+          <button className="w-[78px] h-8 lg:w-[70px] text-sm bg-theme-green text-theme-background rounded-lg font-[550] ">
             Login
           </button>
         </Link>

@@ -5,7 +5,7 @@ import Departments from "./Departments";
 
 function Home() {
   return (
-    <div className="bg-theme-background">
+    <div className="bg-theme-background pb-28">
       <Hero />
       <Departments />
       <AboutUs />

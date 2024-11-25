@@ -105,6 +105,7 @@ const donations = [
     description:
       "This winter, help the community by donationg clothes, supporting education, and spreading warmth!",
     url: "https://forms.gle/6hk8z7wfFvzaHZGr6",
+    verified: true,
     amount: 10000,
     startDate: "Nov 2024",
     endDate: "Dec 2024",
@@ -117,6 +118,7 @@ const donations = [
     img: "",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
+    verified: false,
     amount: "N/A",
     startDate: "N/A",
     endDate: "N/A",
@@ -129,6 +131,7 @@ const donations = [
     img: "",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
+    verified: false,
     amount: "N/A",
     startDate: "N/A",
     endDate: "N/A",

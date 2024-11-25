@@ -25,7 +25,7 @@ const steps = [
     step: 4,
     title: "Thanks",
     description:
-      "Once the problem is resolved, we regard our clients with a GenerosiTree appreciation certificate.",
+      "Once the problem is resolved, we regard our clients with a GenerosiTree appreciation certificate to both the donors and the recievers.",
   },
 ];
 

@@ -39,7 +39,9 @@ function DonationBox({ item }) {
                 <span className="text-lg text-green-600">
                   <MdVerifiedUser />
                 </span>
-                <span className="text-[13.2px] text-theme-brown">Verified</span>
+                <span className="text-[13.2px] text-theme-brown">
+                  {item.verified ? "Verified" : "N/A"}
+                </span>
               </p>
             </div>
             <div className="w-[90px] h-[40px]">

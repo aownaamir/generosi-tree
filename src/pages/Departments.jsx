@@ -3,7 +3,7 @@ import { departments } from "../data/data";
 
 function Departments() {
   return (
-    <div className="px-5 lg:px-8 pt-[120px] flex flex-col justify-center items-center">
+    <div className="px-5 lg:px-8 pt-[120px] pb-28 flex flex-col justify-center items-center">
       <h1 className="text-4xl mt-10 mb-20 poppins">Our Departments</h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-y-[60px] lg:gap-x-[160px]">
         {departments.map((item) => (

@@ -1,7 +1,7 @@
 import { IoHeartCircleOutline } from "react-icons/io5";
 function CommunityService() {
   return (
-    <div className="pt-[96px] px-7 lg:px-10 flex flex-col justify-center items-center gap-10">
+    <div className="pt-[96px] pb-28 px-7 lg:px-10 flex flex-col justify-center items-center gap-10">
       <div className="mt-20 flex flex-col justify-center items-center gap-1">
         <h1 className="font-bold text-[60px] text-center">
           Helping the Community
