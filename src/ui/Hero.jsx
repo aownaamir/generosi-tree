@@ -22,7 +22,7 @@ function Hero() {
           lorem.
         </p>
         <Link to="/donations">
-          <button className="px-6 py-3 bg-chat-green hover:bg-chat-brown text-white font-semibold rounded-lg shadow-md transition-all">
+          <button className="px-6 py-2 bg-chat-green hover:bg-chat-brown text-white font-semibold rounded-lg shadow-md transition-all">
             Donate
           </button>
         </Link>

@@ -1,14 +1,14 @@
-function Miscellaneous({ width = "50px", height = "50px", fill }) {
+function Miscellaneous({ width = "50px", height = "50px", fill, className }) {
   return (
     <svg
-      width={width}
-      height={height}
+      // width={width}
+      // height={height}
       viewBox="0 0 30 30"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <style type="text/css">
-        {`
+        {/* {`
             .st0 { fill: ${fill}; }
             .st1 { fill: ${fill}; }
             .st2 { fill: ${fill}; }
@@ -18,6 +18,17 @@ function Miscellaneous({ width = "50px", height = "50px", fill }) {
             .st6 { fill: ${fill}; }
             .st7 { fill: ${fill}; }
             .st8 { fill: ${fill}; }
+          `} */}
+        {`
+            .st0 { ${className} }
+            .st1 { ${className} }
+            .st2 { ${className} }
+            .st3 { ${className} }
+            .st4 { ${className} }
+            .st5 { ${className} }
+            .st6 { ${className} }
+            .st7 { ${className} }
+            .st8 { ${className} }
           `}
       </style>
       <path

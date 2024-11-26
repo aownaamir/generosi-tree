@@ -81,3 +81,17 @@ html {
 .clip-container2 {
   clip-path: polygon(30% 0, 100% 0, 70% 100%, 0% 100%);
 }
+
+/* .theDept:hover .theText {
+  @apply text-theme-background;
+}
+.theDept:hover .theSvg {
+  @apply fill-theme-background;
+} */
+
+.step-shadow {
+  box-shadow: 0px 6px 10px -3px rgb(116, 161, 78);
+}
+.step-shadow:hover {
+  box-shadow: 0px 12px 19px -5px rgb(116, 161, 78);
+}

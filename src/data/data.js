@@ -12,6 +12,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { CiSquareQuestion } from "react-icons/ci";
+import MapMark from "../svgs/MapMark";
 import QMark from "../svgs/QMark";
 import Goal from "../svgs/Goal";
 import Handshake from "../svgs/Handshake";
@@ -95,7 +96,7 @@ const departments = [
   {
     id: 5,
     name: "Miscellaneous",
-    svg: Miscellaneous,
+    svg: MapMark,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/miscellaneous",
@@ -185,35 +186,34 @@ const donations = [
 ];
 const links = [
   {
+    id: 0,
     title: "linkedin",
     name: "GenerosiTree",
     url: "https://www.linkedin.com/company/generositree/",
     icon: CiLinkedin,
   },
   {
+    id: 1,
     title: "instagram",
     name: "generositree _official",
     url: "https://www.instagram.com/generositree_official/?utm_source=ig_web_button_share_sheet",
     icon: FaInstagram,
   },
   {
+    id: 2,
     title: "gmail",
     name: "generositree official@gmail.com",
     url: "",
     icon: IoMailOutline,
   },
   {
+    id: 3,
     title: "whatsapp",
     name: "GenerosiTree Official",
     url: "https://whatsapp.com/channel/0029Vax7LQvAzNbsNtags90S ",
     icon: FaWhatsapp,
   },
-  {
-    title: "faqs",
-    name: "FAQs",
-    url: "",
-    icon: CiSquareQuestion,
-  },
+  { id: 4, title: "faqs", name: "FAQs", url: "", icon: CiSquareQuestion },
 ];
 
 export { departments, donations, links, team, aboutUs };

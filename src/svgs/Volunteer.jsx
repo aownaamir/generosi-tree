@@ -1,13 +1,14 @@
-function Volunteer({ width = "50px", height = "50px", fill }) {
+function Volunteer({ width = "50px", height = "50px", fill, className }) {
   return (
     <svg
-      fill={fill}
+      // fill={fill}
+      className={className}
       version="1.1"
       id="Capa_1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width={width}
-      height={height}
+      // width={width}
+      // height={height}
       viewBox="0 0 85.285 85.285"
       xmlSpace="preserve"
     >

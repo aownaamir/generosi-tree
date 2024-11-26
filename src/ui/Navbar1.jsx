@@ -18,7 +18,7 @@ function Navbar() {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "text-green-600 font-bold border-b-2 border-green-600"
+                ? "text-green-700 font-bold border-b-2 border-green-600"
                 : "text-theme-brown"
             }
           >
@@ -58,7 +58,7 @@ function Navbar() {
       </ul>
       <div className="h-full absolute top-0 right-5 flex justify-center items-center">
         <Link to="portal">
-          <button className="w-[78px] h-8 lg:w-[70px] text-sm bg-chat-green text-theme-background rounded-lg shadow-lg font-semibold hover:bg-chat-brown ">
+          <button className="w-[78px] h-8 lg:w-[70px] text-sm bg-chat-green text-theme-background rounded-lg shadow-md font-semibold hover:bg-chat-brown ">
             Login
           </button>
         </Link>

@@ -9,7 +9,7 @@ function Departments() {
         {departments.map((item) => (
           <Link key={item.id} to={`${item.url}`}>
             <div className="group w-full h-[190px] lg:w-[180px] lg:h-[180px] flex flex-col gap-3 text-lg py-2 px-5 items-center">
-              <div className=" w-[180px] h-[110px] rounded-3xl border-4 border-chat-green group-hover:border-0 flex justify-center items-center step-shadow relative transition-all duration-150">
+              <div className=" w-[110px] h-[110px] rounded-3xl border-4 border-chat-green group-hover:border-0 flex justify-center items-center dept-shadow relative transition-all duration-150">
                 <div className="w-0 h-0 group-hover:w-full group-hover:h-full rounded-3xl bg-chat-green absolute transition-all duration-150"></div>
                 {/* {<item.svg width="50px" height="50px" fill="#765341" />} */}
                 {

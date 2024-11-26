@@ -1,9 +1,10 @@
-function Clipboard3({ width = "50px", height = "50px", fill }) {
+function Clipboard3({ width = "50px", height = "50px", fill, className }) {
   return (
     <svg
-      fill={fill}
-      width={width}
-      height={height}
+      // fill={fill}
+      // width={width}
+      // height={height}
+      className={className}
       viewBox="0 0 64 64"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"

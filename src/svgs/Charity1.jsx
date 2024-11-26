@@ -1,9 +1,10 @@
-function Charity1({ width = "50px", height = "50px", fill }) {
+function Charity1({ width = "50px", height = "50px", fill, className }) {
   return (
     <svg
-      fill={fill}
-      height={height}
-      width={width}
+      // fill={fill}
+      // height={height}
+      // width={width}
+      className={className}
       version="1.1"
       id="Capa_1"
       xmlns="http://www.w3.org/2000/svg"
