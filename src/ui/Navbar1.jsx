@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="w-full py-[21.5px] flex justify-center bg-transparent absolute z-10">
+    <div className="w-full py-[32.5px] lg:py-[21.5px] flex justify-center bg-transparent absolute z-10">
       {/* <Link to="/">
         <h2 className="text-[25px] roboto-regular">
           <span className="text-theme-brown">Generosi</span>
@@ -58,7 +58,7 @@ function Navbar() {
       </ul>
       <div className="h-full absolute top-0 right-5 flex justify-center items-center">
         <Link to="portal">
-          <button className="w-[78px] h-8 lg:w-[70px] text-sm bg-chat-green text-theme-background rounded-lg shadow-md font-semibold hover:bg-chat-brown ">
+          <button className="w-[78px] h-9 lg:h-8 lg:w-[70px] text-sm bg-chat-green text-theme-background rounded-lg shadow-md font-semibold hover:bg-chat-brown ">
             Login
           </button>
         </Link>

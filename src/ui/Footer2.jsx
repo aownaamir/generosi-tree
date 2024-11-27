@@ -7,13 +7,13 @@ function Footer() {
       id="footer"
       className="px-5 py-14 flex justify-center items-center bg-chat-green"
     >
-      <div className="flex justify-between items-center gap-10">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
         <div className="flex flex-col justify-center items-center bg-theme-background">
           <div>
             <img src={logoS} alt="logo" className="w-[165px] h-[165px]" />
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row gap-7 lg:gap-0">
           {links.map((item, i) => (
             <div
               key={i}

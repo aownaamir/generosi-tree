@@ -5,7 +5,7 @@ import Goal from "../svgs/Goal";
 import { aboutUs } from "../data/data";
 function AboutUs() {
   return (
-    <div className="px-5 lg:px-8 my-40 flex flex-col justify-center items-center">
+    <div className="px-5 lg:px-8 my-16 flex flex-col justify-center items-center">
       <h1 className="text-4xl mt-10 mb-20 poppins">About Us</h1>
       <div className="flex flex-col justify-center items-center gap-10">
         {aboutUs.map((item) => (

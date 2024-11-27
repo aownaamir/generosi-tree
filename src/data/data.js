@@ -109,10 +109,10 @@ const donations = [
     title: "Winter 2024 Donation Drive",
     img: d1,
     description:
-      "This winter, help the community by donationg clothes, supporting education, and spreading warmth!",
+      "This winter, help the community by donating clothes, supporting education, and spreading warmth!",
     url: "https://forms.gle/6hk8z7wfFvzaHZGr6",
     verified: true,
-    amount: 10000,
+    amount: 100000,
     startDate: "Nov 2024",
     endDate: "Dec 2024",
     location: "Islamabad",
@@ -215,5 +215,35 @@ const links = [
   },
   { id: 4, title: "faqs", name: "FAQs", url: "", icon: CiSquareQuestion },
 ];
+const steps = [
+  {
+    number: "1",
+    title: "Identify Cases",
+    description:
+      "We find cases around the internet, searching for people facing some kind of emergency situation.",
+    icon: "🔍",
+  },
+  {
+    number: "2",
+    title: "Verification",
+    description:
+      "We verify the cases through documents or by contacting relevant people.",
+    icon: "✅",
+  },
+  {
+    number: "3",
+    title: "Campaign",
+    description:
+      "We publish verified cases on our website and social media to raise awareness and gather help.",
+    icon: "📢",
+  },
+  {
+    number: "4",
+    title: "Acknowledge",
+    description:
+      "We appreciate donors and recipients by providing certificates and updates.",
+    icon: "🏆",
+  },
+];
 
-export { departments, donations, links, team, aboutUs };
+export { departments, donations, links, team, aboutUs, steps };

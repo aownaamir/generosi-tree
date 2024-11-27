@@ -56,9 +56,11 @@ function DonationBox({ item }) {
         <span className="w-[100px] text-gray-400 text-sm">
           Target: <br></br>Rs {item.amount}
         </span>
-        <button className="bg-chat-green text-white px-3 py-1 rounded-md hover:bg-chat-brown float-end">
-          Donate Now
-        </button>
+        <a href={item.url} target="_blank">
+          <button className="bg-chat-green text-white px-3 py-1 rounded-md hover:bg-chat-brown float-end">
+            Donate Now
+          </button>
+        </a>
         {/* <div className="w-[150px] bg-gray-300 rounded-full h-2.5 mt-5">
           <div
             className="bg-green-500 h-2.5 rounded-full"
