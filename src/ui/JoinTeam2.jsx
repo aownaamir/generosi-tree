@@ -2,7 +2,7 @@ import { steps } from "../data/data";
 
 function Steps1() {
   return (
-    <section className="bg-theme-background py-16 px-6 flex flex-col justify-center items-center">
+    <section className="bg-theme-backgroundC py-16 px-6 flex flex-col justify-center items-center">
       <h2 className="text-center text-3xl font-bold text-[#4c3a2c] mb-10">
         How Do We Work?
       </h2>

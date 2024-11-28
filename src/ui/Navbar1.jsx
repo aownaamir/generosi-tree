@@ -25,16 +25,6 @@ function Navbar() {
             <li>Home</li>
           </NavLink>
           <NavLink
-            to="donations"
-            className={({ isActive }) =>
-              isActive
-                ? "text-green-600 font-bold border-b-2 border-green-600"
-                : "text-theme-brown"
-            }
-          >
-            <li>Donations</li>
-          </NavLink>
-          <NavLink
             to="departments"
             className={({ isActive }) =>
               isActive
@@ -43,6 +33,16 @@ function Navbar() {
             }
           >
             <li>Departments</li>
+          </NavLink>
+          <NavLink
+            to="donations"
+            className={({ isActive }) =>
+              isActive
+                ? "text-green-600 font-bold border-b-2 border-green-600"
+                : "text-theme-brown"
+            }
+          >
+            <li>Donations</li>
           </NavLink>
           <a
             href="#footer"
@@ -58,7 +58,7 @@ function Navbar() {
       </ul>
       <div className="h-full absolute top-0 right-5 flex justify-center items-center">
         <Link to="portal">
-          <button className="w-[78px] h-9 lg:h-8 lg:w-[70px] text-sm bg-chat-green text-theme-background rounded-lg shadow-md font-semibold hover:bg-chat-brown ">
+          <button className="w-[78px] h-9 lg:h-8 lg:w-[70px] text-sm bg-chat-green text-theme-background rounded-lg shadow-md font-semibold hover:bg-chat-greenH">
             Login
           </button>
         </Link>

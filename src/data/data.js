@@ -31,7 +31,7 @@ const aboutUs = [
     id: 0,
     title: "What's GenerosiTree?",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin nulla ac ligula feugiat consequat. Curabitur et enim iaculis nunc egestas lobortis quis eget sem. Mauris ultrices ac felis quis ornare.Cras venenatis sapien vitae tempus vehicula. Mauris sollicitudin ante at libero lobortis, id lobortis metus ultrices. Sed sed elit mollis mi dictum volutpat.",
+      "GenerosiTree is a community-driven platform focused on fostering positive change through collaborative volunteer efforts and impactful projects. It empowers individuals and teams to give back to their communities, addressing social challenges and promoting sustainable development through collective action.",
     svg: QMark,
     inverted: false,
   },
@@ -39,7 +39,7 @@ const aboutUs = [
     id: 1,
     title: "Our Goal",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin nulla ac ligula feugiat consequat. Curabitur et enim iaculis nunc egestas lobortis quis eget sem. Mauris ultrices ac felis quis ornare.Cras venenatis sapien vitae tempus vehicula. Mauris sollicitudin ante at libero lobortis, id lobortis metus ultrices. Sed sed elit mollis mi dictum volutpat.",
+      "Our goal at GenerosiTree is to create a vibrant network of individuals united by the spirit of giving and service. We aim to empower communities by addressing key social challenges, fostering sustainability, and promoting compassion. Through impactful initiatives, we strive to inspire collaboration and create meaningful, lasting change for a brighter, more inclusive future.",
     svg: Goal,
     inverted: true,
   },
@@ -47,7 +47,7 @@ const aboutUs = [
     id: 2,
     title: "Your Contribution",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin nulla ac ligula feugiat consequat. Curabitur et enim iaculis nunc egestas lobortis quis eget sem. Mauris ultrices ac felis quis ornare.Cras venenatis sapien vitae tempus vehicula. Mauris sollicitudin ante at libero lobortis, id lobortis metus ultrices. Sed sed elit mollis mi dictum volutpat.",
+      "Your contribution to GenerosiTree is the lifeblood of our mission to uplift and empower communities. Whether through donations, volunteering your time, or sharing our cause with others, every act of generosity helps us branch out further and make a lasting impact. Join us in building a network of kindness and hope, where your involvement plants seeds of change that grow into a better future for those in need. Together, we can make a difference!",
     svg: Handshake,
     inverted: false,
   },
@@ -245,5 +245,87 @@ const steps = [
     icon: "🏆",
   },
 ];
+const volunteers = [
+  {
+    id: 0,
+    name: "Awais Kamran",
+    img: Aown,
+    post: "Community Organizer",
+    review:
+      "Volunteering with this community has been life-changing. I feel so connected!",
+    story:
+      "Volunteering has changed my life. It’s amazing to see the difference we can make together.",
+  },
+  {
+    id: 1,
+    name: "Abdullah Raza",
+    img: Hayyan,
+    post: "Volunteer Coordinator",
+    review:
+      "They’ve made such a difference in my life. Thank you for everything!",
+    story:
+      "Being part of this team has been an incredible journey of growth and giving back.",
+  },
+  {
+    id: 2,
+    name: "Kumail Khan",
+    img: Aown,
+    post: "Community Organizer",
+    review:
+      "A truly inspiring organization that’s transforming lives every day.",
+    story:
+      "Volunteering has changed my life. It’s amazing to see the difference we can make together.",
+  },
+  {
+    id: 3,
+    name: "Naima Ilyas",
+    img: Hayyan,
+    post: "Community Organizer",
+    review:
+      "Volunteering with this community has been life-changing. I feel so connected!",
+    story:
+      "Volunteering has changed my life. It’s amazing to see the difference we can make together.",
+  },
+  {
+    id: 4,
+    name: "Awais Kamran",
+    img: Aown,
+    post: "Community Organizer",
+    review:
+      "Volunteering with this community has been life-changing. I feel so connected!",
+    story:
+      "Volunteering has changed my life. It’s amazing to see the difference we can make together.",
+  },
+  {
+    id: 5,
+    name: "Abdullah Raza",
+    img: Hayyan,
+    post: "Community Organizer",
+    review:
+      "Volunteering with this community has been life-changing. I feel so connected!",
+    story:
+      "Volunteering has changed my life. It’s amazing to see the difference we can make together.",
+  },
+  {
+    id: 6,
+    name: "Kumail Khan",
+    img: Aown,
+    post: "Community Organizer",
+    review:
+      "Volunteering with this community has been life-changing. I feel so connected!",
+    story:
+      "Volunteering has changed my life. It’s amazing to see the difference we can make together.",
+  },
+  {
+    id: 7,
+    name: "Naima Ilyas",
+    img: Hayyan,
+    post: "Community Organizer",
+    review:
+      "Volunteering with this community has been life-changing. I feel so connected!",
+    story:
+      "Volunteering has changed my life. It’s amazing to see the difference we can make together.",
+  },
+];
 
-export { departments, donations, links, team, aboutUs, steps };
+export { departments, donations, links, team, aboutUs, steps, volunteers };

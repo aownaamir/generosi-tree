@@ -4,7 +4,7 @@ import { LuPalmtree } from "react-icons/lu";
 
 function Hero() {
   return (
-    <div className="px-5 lg:px-8  pt-[96px] w-full lg:h-[100vh] flex flex-col lg:flex-row relative  justify-center items-center lg:gap-[80px] bg-theme-background">
+    <div className="px-5 lg:px-8  pt-[100px] w-full lg:h-[100vh] flex flex-col lg:flex-row relative  justify-center items-center lg:gap-[80px] bg-theme-backgroundC">
       <div className="w-[320px] h-[320px] lg:hidden">
         <Link to="/">
           <img src={logo} alt="logo" width="100%" height="100%" />
@@ -22,7 +22,7 @@ function Hero() {
           lorem.
         </p>
         <Link to="/donations">
-          <button className="px-6 py-2 bg-chat-green hover:bg-chat-brown text-white font-semibold rounded-lg shadow-md transition-all">
+          <button className="px-6 py-2 bg-chat-green hover:bg-chat-greenH text-white font-semibold rounded-lg shadow-md transition-all">
             Donate
           </button>
         </Link>

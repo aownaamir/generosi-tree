@@ -10,6 +10,8 @@ import Awareness from "./pages/Awareness";
 import CommunityService from "./pages/CommunityService";
 import TeamVolunteer from "./pages/TeamVolunteer";
 import Dashboard from "./pages/Dashboard";
+// import PetitionForm from "./chat/PetitionForm1";
+// import CS from "./chat/CS1";
 
 function App() {
   const router = createBrowserRouter([

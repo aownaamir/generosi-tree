@@ -1,14 +1,24 @@
-import { team } from "../data/data";
-import TeamCard from "../ui/TeamCard";
+import VolunteerStories from "../ui/VolunteerStories";
+import VolunteerSignUp from "../ui/VolunteerSignUp";
+import VolunteerStatistics from "../ui/VolunteerStatistics";
+import GetInTouch from "../ui/GetInTouch";
+import VolunteerGrid from "../ui/VolunteerGrid";
 function TeamVolunteer() {
   return (
-    <div className="pt-[96px] pb-28 px-7 lg:px-10 flex flex-col justify-center items-center">
-      {/* <h1 className="text-center mt-20 text-[60px] font-bold">Meet our team</h1>
-      <div className="flex flex-col lg:flex-row gap-20 mt-20">
-        {team.map((item) => (
-          <TeamCard key={item.id} item={item} />
-        ))}
-      </div> */}
+    <div className="pt-[96px] pb-28 px-7 lg:px-10 flex flex-col justify-center items-center bg-theme-backgroundC">
+      <div className="text-center py-16">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          Meet Our Volunteers
+        </h1>
+        <p className="text-lg text-gray-600">
+          The passionate individuals behind our community service initiatives.
+        </p>
+      </div>
+      <VolunteerGrid />
+      <VolunteerStories />
+      <VolunteerSignUp />
+      <VolunteerStatistics />
+      <GetInTouch />
     </div>
   );
 }
