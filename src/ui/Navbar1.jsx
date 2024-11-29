@@ -1,17 +1,18 @@
 import logoC from "/images/logo-circle-textless.png";
 import logoS from "/images/logo-square.png";
 import logo from "/images/logo.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { departments } from "../data/data";
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const location = useLocation();
 
   const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+    setIsDropdownOpen((pV) => !pV);
   };
-
+  // console.log(location.pathname);
   return (
     <div className="w-full py-[32.5px] lg:py-[21.5px] flex justify-center bg-transparent absolute z-10">
       <ul className="raleway flex lg:gap-10 text-[13px] justify-center items-center">
@@ -90,13 +91,15 @@ function Navbar() {
           </NavLink> */}
         </div>
       </ul>
-      <div className="h-full absolute top-0 right-5 flex justify-center items-center">
-        <Link to="portal">
-          <button className="w-[78px] h-9 lg:h-8 lg:w-[70px] text-[13px] bg-chat-green text-theme-background rounded-lg shadow-md font-semibold hover:bg-chat-greenH">
-            Login
-          </button>
-        </Link>
-      </div>
+      {location.pathname === "/" && (
+        <div className="h-full absolute top-0 right-5 flex justify-center items-center">
+          <Link to="portal">
+            <button className="w-[78px] h-9 lg:h-8 lg:w-[70px] text-[13px] bg-chat-green text-theme-background rounded-lg shadow-md font-semibold hover:bg-chat-greenH">
+              Login
+            </button>
+          </Link>
+        </div>
+      )}
     </div>
   );
 }
