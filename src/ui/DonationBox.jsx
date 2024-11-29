@@ -1,19 +1,9 @@
-import { Link } from "react-router-dom";
-import Aown from "/images/Aown.jpg";
-import Palastine from "/images/Palastine.jpg";
 import { MdVerifiedUser } from "react-icons/md";
-import { FaMoneyBillWaveAlt } from "react-icons/fa";
-import { FaRegCalendar } from "react-icons/fa6";
-import { IoLocationSharp } from "react-icons/io5";
-import { CiCalendarDate } from "react-icons/ci";
 import { FaRegCalendarCheck } from "react-icons/fa6";
-import { TbCalendar } from "react-icons/tb";
-import { TbCalendarFilled } from "react-icons/tb";
-import { MdOutlineSettingsInputAntenna } from "react-icons/md";
 import { RiListSettingsFill } from "react-icons/ri";
 import { FaRegCalendarMinus } from "react-icons/fa";
-
-import Card from "./Card4";
+import { ImStopwatch } from "react-icons/im";
+import CountdownTimer from "./CountdownTimer";
 
 function DonationBox({ item }) {
   return (
@@ -41,9 +31,16 @@ function DonationBox({ item }) {
       <div className="flex justify-between items-center mt-5">
         <p className=" flex  gap-[7px]">
           <span className="text-lg text-chat-green">
-            <RiListSettingsFill />
+            <ImStopwatch />
           </span>
-          <span className="text-[13.2px] text-theme-brown">{item.type}</span>
+          {item.target ? (
+            <CountdownTimer
+              className="text-[13.2px] text-theme-brown"
+              target={item.target}
+            />
+          ) : (
+            <span className="text-[13.2px] text-theme-brown">N/A</span>
+          )}
         </p>
         <p className=" flex  gap-[7px]">
           <span className="text-lg text-chat-green">
