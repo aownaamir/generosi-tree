@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "/images/logo.png";
-import { LuPalmtree } from "react-icons/lu";
-
-function Hero() {
+function HomeHero() {
   return (
     <div className="px-5 lg:px-8  pt-[100px] w-full lg:h-[100vh] flex flex-col lg:flex-row relative  justify-center items-center lg:gap-[80px] bg-theme-backgroundC">
       <div className="w-[320px] h-[320px] lg:hidden">
@@ -37,4 +35,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default HomeHero;

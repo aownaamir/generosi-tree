@@ -26,7 +26,7 @@ function Footer() {
                 href={item.title === "gmail" ? "" : item.url}
                 target={item.title === "gmail" ? "_parent" : "_blank"}
               >
-                <item.icon className="text-[40px] lg:text-[70px] text-chat-brown hover:text-theme-backgroundC" />
+                <item.icon className="text-[40px] lg:text-[70px] text-theme-background hover:text-chat-brown" />
               </a>
               {/* <a
                 href={item.title === "gmail" ? "" : item.url}

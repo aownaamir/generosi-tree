@@ -1,6 +1,6 @@
 function DonationCategories() {
   return (
-    <div className="flex gap-4 mt-5">
+    <div className="flex justify-center gap-4 mt-10">
       <button className="bg-chat-green hover:bg-chat-greenH text-white py-2 px-4 rounded">
         All
       </button>

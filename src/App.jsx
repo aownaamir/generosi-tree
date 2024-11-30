@@ -4,15 +4,13 @@ import Portal from "./pages/Portal";
 import AppLayout from "./pages/AppLayout";
 import Donations from "./pages/Donations";
 import Departments from "./pages/Departments";
-import DonationForm from "./pages/DonationForm";
+// import DonationForm from "./pages/DonationForm";
 import Petitions from "./pages/Petitions";
 import Awareness from "./pages/Awareness";
 import CommunityService from "./pages/CommunityService";
 import TeamVolunteer from "./pages/TeamVolunteer";
 import Dashboard from "./pages/Dashboard";
 import ChatHome from "./chat/ChatHome";
-// import PetitionForm from "./chat/PetitionForm1";
-// import CS from "./chat/CS1";
 
 function App() {
   const router = createBrowserRouter([
@@ -35,10 +33,10 @@ function App() {
           path: "/donations",
           element: <Donations />,
         },
-        {
-          path: "/donate",
-          element: <DonationForm />,
-        },
+        // {
+        //   path: "/donate",
+        //   element: <DonationForm />,
+        // },
         {
           path: "/petitions",
           element: <Petitions />,

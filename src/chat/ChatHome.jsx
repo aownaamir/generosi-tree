@@ -7,7 +7,7 @@ import EventsCalendar2 from "./EventsCalendar2";
 import logo from "/images/logo.png";
 
 const ChatHome = () => (
-  <div className="px-10 flex flex-col gap-10">
+  <div className=" flex flex-col gap-10">
     <Hero />
     <About />
     <FeaturedCauses />
@@ -27,6 +27,10 @@ const ChatHome = () => (
     <CircularProgressMetrics />
     <BadgeMetrics />
     <VerticalMetrics />
+    <DonationTiers />
+    <AwarenessHero />
+    <AwarenessHero2 />
+    <AwarenessPage />
   </div>
 );
 
@@ -316,6 +320,219 @@ const VerticalMetrics = () => {
           <p className="text-gray-600">{item.label}</p>
         </div>
       ))}
+    </div>
+  );
+};
+const DonationTiers = () => {
+  const tiers = [
+    {
+      name: "Bronze Donor",
+      amount: "Up to Rs 10,000",
+      color: "bg-yellow-100",
+      textColor: "text-yellow-600",
+      icon: "🟤", // Replace with actual icons if you have an icon library
+    },
+    {
+      name: "Silver Donor",
+      amount: "Up to Rs 50,000",
+      color: "bg-gray-200",
+      textColor: "text-gray-800",
+      icon: "⚪",
+    },
+    {
+      name: "Gold Donor",
+      amount: "Above Rs 50,000",
+      color: "bg-yellow-500",
+      textColor: "text-white",
+      icon: "🌟",
+    },
+  ];
+
+  return (
+    <section className="py-12 bg-gray-50">
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold text-gray-800">Our Donation Tiers</h2>
+        <p className="text-gray-600">
+          Recognizing our generous community contributions
+        </p>
+      </div>
+      <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+        {tiers.map((tier, index) => (
+          <div
+            key={index}
+            className={`flex flex-col items-center justify-center p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 ${tier.color}`}
+          >
+            <div className="text-4xl mb-4">{tier.icon}</div>
+            <h3 className={`text-xl font-bold ${tier.textColor}`}>
+              {tier.name}
+            </h3>
+            <p className={`mt-2 ${tier.textColor}`}>{tier.amount}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+const AwarenessHero = () => (
+  <section className="bg-chat-green py-16">
+    <div className="container mx-auto text-center">
+      <h1 className="text-4xl font-bold text-theme-background">
+        Together, We Can Change Lives!
+      </h1>
+      <p className="mt-4 text-lg text-theme-background">
+        Join us in raising awareness and support for those in need. Every action
+        matters.
+      </p>
+      <div className="mt-6">
+        <button className="bg-theme-brown text-white px-6 py-3 rounded-md hover:bg-chat-brown">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </section>
+);
+const AwarenessHero2 = () => (
+  <section className="bg-blue-100 py-16">
+    <div className="container mx-auto text-center">
+      <h1 className="text-4xl font-bold text-blue-800">
+        Together, We Can Change Lives!
+      </h1>
+      <p className="mt-4 text-lg text-blue-600">
+        Join us in raising awareness and support for those in need. Every action
+        matters.
+      </p>
+      <div className="mt-6">
+        <button className="bg-blue-700 text-white px-6 py-3 rounded-md hover:bg-blue-600">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </section>
+);
+
+const AwarenessPage = () => {
+  return (
+    <div className="bg-gray-100 min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-blue-900 text-white py-20 text-center">
+        <h1 className="text-5xl font-bold">Together, We Can Change Lives!</h1>
+        <p className="mt-4 text-lg">
+          Join us in raising awareness and support for those in need. Every
+          action matters.
+        </p>
+        <button className="mt-6 px-8 py-3 bg-white text-blue-900 font-semibold rounded-md hover:bg-gray-200">
+          Learn More
+        </button>
+      </section>
+
+      {/* About the Cause */}
+      <section className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-800">Why It Matters</h2>
+          <p className="mt-4 text-gray-600">
+            Millions of people around the world are facing hardship every day.
+            Our mission is to bring change by providing essential resources and
+            support to those who need it the most.
+          </p>
+        </div>
+      </section>
+
+      {/* Impact Metrics */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-800">
+            Our Impact So Far
+          </h2>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 shadow-lg rounded-lg">
+              <h3 className="text-2xl font-semibold text-blue-900">5,000+</h3>
+              <p className="mt-2 text-gray-600">Families Supported</p>
+            </div>
+            <div className="bg-white p-8 shadow-lg rounded-lg">
+              <h3 className="text-2xl font-semibold text-blue-900">1M+ Rs</h3>
+              <p className="mt-2 text-gray-600">Funds Raised</p>
+            </div>
+            <div className="bg-white p-8 shadow-lg rounded-lg">
+              <h3 className="text-2xl font-semibold text-blue-900">1,200+</h3>
+              <p className="mt-2 text-gray-600">Active Volunteers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Success Stories */}
+      <section className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-800">Success Stories</h2>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-gray-100 p-6 rounded-lg">
+              <p className="text-gray-700">
+                "Thanks to your donations, we were able to provide medical aid
+                to over 3,000 children in rural areas."
+              </p>
+              <span className="block mt-4 text-blue-900 font-semibold">
+                - John Doe, Volunteer
+              </span>
+            </div>
+            <div className="bg-gray-100 p-6 rounded-lg">
+              <p className="text-gray-700">
+                "With the community's support, we built shelters for families
+                affected by floods in our region."
+              </p>
+              <span className="block mt-4 text-blue-900 font-semibold">
+                - Jane Smith, Beneficiary
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="bg-blue-900 text-white py-20 text-center">
+        <h2 className="text-4xl font-bold">How You Can Help</h2>
+        <p className="mt-4 text-lg">
+          Whether through donations, volunteering, or spreading the word, you
+          can make a difference.
+        </p>
+        <div className="mt-6 space-x-4">
+          <button className="px-8 py-3 bg-white text-blue-900 font-semibold rounded-md hover:bg-gray-200">
+            Donate Now
+          </button>
+          <button className="px-8 py-3 bg-white text-blue-900 font-semibold rounded-md hover:bg-gray-200">
+            Become a Volunteer
+          </button>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-800">
+            Frequently Asked Questions
+          </h2>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 shadow-lg rounded-lg">
+              <h3 className="text-lg font-semibold text-blue-900">
+                How are donations used?
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Donations go directly towards providing resources such as food,
+                medical supplies, and shelter.
+              </p>
+            </div>
+            <div className="bg-white p-6 shadow-lg rounded-lg">
+              <h3 className="text-lg font-semibold text-blue-900">
+                Can I volunteer remotely?
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Yes! We offer various remote volunteering opportunities. Reach
+                out to learn more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

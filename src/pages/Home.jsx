@@ -1,12 +1,12 @@
 import AboutUs from "../ui/AboutUs";
-import Hero from "../ui/Hero";
+import HomeHero from "../ui/HomeHero";
 import JoinTeam from "../ui/JoinTeam2";
 import Departments from "./Departments";
 
 function Home() {
   return (
     <div className="bg-theme-backgroundC pb-28">
-      <Hero />
+      <HomeHero />
       <Departments />
       <AboutUs />
       <JoinTeam />
