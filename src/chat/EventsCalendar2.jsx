@@ -16,7 +16,7 @@ const statusColors = {
   none: "bg-gray-300",
 };
 
-const MonthlyStatusCalendar = () => {
+const EventsCalendar2 = () => {
   const daysInMonth = new Date(2024, 11, 0).getDate(); // December 2024
   const today = new Date().toISOString().slice(0, 10);
 
@@ -74,4 +74,4 @@ const MonthlyStatusCalendar = () => {
   );
 };
 
-export default MonthlyStatusCalendar;
+export default EventsCalendar2;

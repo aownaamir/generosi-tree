@@ -1,13 +1,32 @@
+import DonationTracker from "../ui/DonationTracker";
+import EventsCalendar from "../ui/EventsCalendar";
+import FAQs from "../ui/FAQs";
+import ProgressCard from "../ui/ProgressCard";
+import Tiers from "../ui/DonationTiers";
+import EventsCalendar2 from "./EventsCalendar2";
 import logo from "/images/logo.png";
 
 const ChatHome = () => (
-  <div>
+  <div className="px-10 flex flex-col gap-10">
     <Hero />
     <About />
     <FeaturedCauses />
     <Testimonials />
     <CTASection />
     <Newsletter />
+    {/* Dontions */}
+    <EventsCalendar />
+    <EventsCalendar2 />
+    <DonationTracker />
+    <FAQs />
+    <Tiers />
+    <ProgressCard title="Winter Drive" target={10000} raised={23000} />
+    <Metrics1 />
+    <Metrics2 />
+    <HorizontalScrollableMetricsBar />
+    <CircularProgressMetrics />
+    <BadgeMetrics />
+    <VerticalMetrics />
   </div>
 );
 
@@ -166,5 +185,139 @@ const Newsletter = () => (
     </div>
   </section>
 );
+
+function Metrics1() {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-white p-8 rounded-lg shadow-lg">
+      {[
+        { label: "Total Funds Raised", value: "Rs 1,200,000" },
+        { label: "Number of Beneficiaries", value: "540+" },
+        { label: "Ongoing Drives", value: "8" },
+      ].map((metric, index) => (
+        <div
+          key={index}
+          className="text-center p-4 border border-gray-200 rounded-lg"
+        >
+          <h3 className="text-2xl font-bold text-green-600">{metric.value}</h3>
+          <p className="text-gray-600">{metric.label}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function Metrics2() {
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[
+        { icon: "💰", label: "Total Raised", value: "Rs 1,200,000" },
+        { icon: "👥", label: "Beneficiaries", value: "540+" },
+        { icon: "🚀", label: "Drives Active", value: "8" },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="flex items-center bg-green-50 p-6 rounded-lg shadow-md"
+        >
+          <div className="text-4xl mr-4">{item.icon}</div>
+          <div>
+            <h3 className="text-xl font-bold">{item.value}</h3>
+            <p className="text-gray-700">{item.label}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function HorizontalScrollableMetricsBar() {
+  return (
+    <div className="flex overflow-x-auto space-x-6 bg-green-100 p-4 rounded-lg shadow-md">
+      {[
+        { label: "Funds Raised", value: "Rs 1,200,000" },
+        { label: "Beneficiaries", value: "540+" },
+        { label: "Active Drives", value: "8" },
+        { label: "Funds Raised", value: "Rs 1,200,000" },
+        { label: "Beneficiaries", value: "540+" },
+        { label: "Active Drives", value: "8" },
+        { label: "Funds Raised", value: "Rs 1,200,000" },
+        { label: "Beneficiaries", value: "540+" },
+        { label: "Active Drives", value: "8" },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="min-w-[200px] p-4 bg-white rounded-lg shadow"
+        >
+          <h3 className="text-green-600 text-2xl font-bold">{item.value}</h3>
+          <p className="text-gray-600">{item.label}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function CircularProgressMetrics() {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      {[
+        { label: "Funds Raised", value: "75%" },
+        { label: "Beneficiaries", value: "65%" },
+        { label: "Drives Completed", value: "80%" },
+      ].map((item, index) => (
+        <div key={index} className="flex flex-col items-center">
+          <div className="relative w-24 h-24">
+            <div
+              className="absolute top-0 left-0 w-full h-full rounded-full border-8 border-green-400"
+              style={{ clipPath: "circle(50% at 50% 50%)" }}
+            />
+            <div className="absolute top-0 left-0 w-full h-full rounded-full border-8 border-gray-300" />
+          </div>
+          <h3 className="mt-4 text-2xl font-bold text-green-600">
+            {item.value}
+          </h3>
+          <p className="text-gray-600">{item.label}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+const BadgeMetrics = () => {
+  return (
+    <div className="flex flex-wrap gap-4">
+      {[
+        { label: "Total Funds Raised", value: "Rs 1,200,000" },
+        { label: "Beneficiaries", value: "540+" },
+        { label: "Active Drives", value: "8" },
+      ].map((item, index) => (
+        <span
+          key={index}
+          className="bg-green-100 text-green-700 px-4 py-2 rounded-lg shadow"
+        >
+          <strong>{item.value}</strong> {item.label}
+        </span>
+      ))}
+    </div>
+  );
+};
+const VerticalMetrics = () => {
+  return (
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 text-center">
+      {[
+        { icon: "💵", label: "Funds Raised", value: "Rs 1,200,000" },
+        { icon: "👨‍👩‍👧‍👦", label: "Beneficiaries", value: "540+" },
+        { icon: "📅", label: "Ongoing Drives", value: "8" },
+        { icon: "💵", label: "Funds Raised", value: "Rs 1,200,000" },
+        { icon: "👨‍👩‍👧‍👦", label: "Beneficiaries", value: "540+" },
+        { icon: "📅", label: "Ongoing Drives", value: "8" },
+      ].map((item, index) => (
+        <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+          <div className="text-4xl mb-2">{item.icon}</div>
+          <h3 className="text-xl font-bold">{item.value}</h3>
+          <p className="text-gray-600">{item.label}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default ChatHome;

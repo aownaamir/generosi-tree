@@ -79,7 +79,7 @@ function Navbar() {
           >
             <li className="text-theme-brown">Contact</li>
           </a>
-          {/* <NavLink
+          <NavLink
             to="chat"
             className={({ isActive }) =>
               isActive
@@ -88,7 +88,7 @@ function Navbar() {
             }
           >
             <li>GPT</li>
-          </NavLink> */}
+          </NavLink>
         </div>
       </ul>
       {location.pathname === "/" && (
