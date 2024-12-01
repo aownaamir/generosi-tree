@@ -98,3 +98,14 @@ html {
 .step-shadow:hover {
   box-shadow: 0px 12px 19px -5px rgb(116, 161, 78);
 }
+
+/* auth page 4 */
+.text-neon-green {
+  color: #39ff14;
+}
+.bg-neon-green {
+  background-color: #39ff14;
+}
+.border-neon-green {
+  border-color: #39ff14;
+}

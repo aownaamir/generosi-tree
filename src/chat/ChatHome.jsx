@@ -5,16 +5,19 @@ import ProgressCard from "../ui/ProgressCard";
 import Tiers from "../ui/DonationTiers";
 import EventsCalendar2 from "./EventsCalendar2";
 import logo from "/images/logo.png";
+import { useState } from "react";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
 
 const ChatHome = () => (
-  <div className=" flex flex-col gap-10">
-    <Hero />
+  <div className=" flex flex-col">
+    {/* <Hero />
     <About />
     <FeaturedCauses />
     <Testimonials />
     <CTASection />
     <Newsletter />
-    {/* Dontions */}
+    
     <EventsCalendar />
     <EventsCalendar2 />
     <DonationTracker />
@@ -30,7 +33,13 @@ const ChatHome = () => (
     <DonationTiers />
     <AwarenessHero />
     <AwarenessHero2 />
-    <AwarenessPage />
+    <AwarenessPage /> */}
+    <AuthPage />
+    <AuthPage2 />
+    <AuthPage3 />
+    <AuthPage4 />
+    <AuthPage5 />
+    <AuthPage6 />
   </div>
 );
 
@@ -533,6 +542,282 @@ const AwarenessPage = () => {
           </div>
         </div>
       </section>
+    </div>
+  );
+};
+
+const AuthPage = () => {
+  const [isLogin, setIsLogin] = useState(true);
+
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-r from-yellow-100 to-yellow-200">
+      <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden md:flex">
+        {/* Left Panel */}
+        <div
+          className={`w-full md:w-1/2 p-8 ${isLogin ? "hidden md:block" : ""}`}
+        >
+          <h2 className="text-2xl font-semibold text-gray-700">
+            {isLogin ? "Welcome Back!" : "Join Us!"}
+          </h2>
+          <p className="mt-4 text-gray-500">
+            {isLogin
+              ? "Sign in to access your account and continue where you left off."
+              : "Create an account to unlock all our features and stay connected."}
+          </p>
+          <button
+            onClick={() => setIsLogin(!isLogin)}
+            className="mt-6 px-6 py-2 text-sm font-medium text-white bg-gray-700 rounded hover:bg-gray-600"
+          >
+            {isLogin ? "Sign Up" : "Sign In"}
+          </button>
+        </div>
+
+        {/* Right Panel */}
+        <div className="w-full md:w-1/2 p-8">
+          <h2 className="text-2xl font-semibold text-gray-700">
+            {isLogin ? "Sign In" : "Sign Up"}
+          </h2>
+          <form className="mt-6">
+            {!isLogin && (
+              <div>
+                <label className="block text-sm text-gray-600">Name</label>
+                <input
+                  type="text"
+                  className="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                />
+              </div>
+            )}
+            <div>
+              <label className="block text-sm text-gray-600">Email</label>
+              <input
+                type="email"
+                className="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              />
+            </div>
+            <div className="mt-4">
+              <label className="block text-sm text-gray-600">Password</label>
+              <input
+                type="password"
+                className="w-full mt-2 p-3 border rounded focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              />
+            </div>
+            <button
+              type="submit"
+              className="w-full mt-6 px-4 py-2 text-white bg-yellow-500 rounded hover:bg-yellow-600"
+            >
+              {isLogin ? "Sign In" : "Sign Up"}
+            </button>
+          </form>
+          <p className="mt-4 text-sm text-center text-gray-600">
+            {isLogin ? "Don't have an account?" : "Already have an account?"}
+            <span
+              onClick={() => setIsLogin(!isLogin)}
+              className="ml-1 text-yellow-500 cursor-pointer hover:underline"
+            >
+              {isLogin ? "Sign Up" : "Sign In"}
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+const AuthPage2 = () => {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-gray-100">
+      <div className="w-full max-w-md p-8 bg-white rounded shadow-md">
+        <h2 className="text-3xl font-bold text-center text-gray-800">
+          Sign In
+        </h2>
+        <form className="mt-6">
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full mt-4 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full mt-4 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button
+            type="submit"
+            className="w-full mt-6 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700"
+          >
+            Login
+          </button>
+        </form>
+        <p className="mt-4 text-center text-gray-600">
+          Don't have an account?{" "}
+          <span className="text-blue-500 cursor-pointer">Sign Up</span>
+        </p>
+      </div>
+    </div>
+  );
+};
+const AuthPage3 = () => {
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-400 to-blue-500">
+      <div className="bg-white/30 backdrop-blur-lg rounded-lg shadow-lg p-8 max-w-sm">
+        <h2 className="text-3xl font-semibold text-white text-center">
+          Sign Up
+        </h2>
+        <form className="mt-6">
+          <input
+            type="text"
+            placeholder="Username"
+            className="w-full p-3 mt-4 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full p-3 mt-4 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full p-3 mt-4 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white"
+          />
+          <button className="w-full mt-6 py-3 bg-gradient-to-r from-purple-600 to-blue-500 rounded-lg text-white hover:opacity-80">
+            Register
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+const AuthPage4 = () => {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-black">
+      <div className="p-8 w-full max-w-md bg-gray-800 rounded-lg shadow-lg">
+        <h2 className="text-3xl font-bold text-neon-green text-center">
+          Welcome Back!
+        </h2>
+        <form className="mt-6">
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full p-3 mt-4 bg-gray-900 border border-neon-green text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-neon-green"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full p-3 mt-4 bg-gray-900 border border-neon-green text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-neon-green"
+          />
+          <button
+            type="submit"
+            className="w-full mt-6 py-3 text-white bg-neon-green rounded-lg hover:bg-green-500"
+          >
+            Login
+          </button>
+        </form>
+        <p className="mt-4 text-center text-white">
+          Need an account?{" "}
+          <span className="text-neon-green cursor-pointer">Register</span>
+        </p>
+      </div>
+    </div>
+  );
+};
+const AuthPage5 = () => {
+  return (
+    <div className="min-h-screen grid grid-cols-1 md:grid-cols-2">
+      <div className="hidden md:flex flex-col items-center justify-center bg-gradient-to-r from-indigo-500 to-blue-500">
+        <h1 className="text-4xl font-bold text-white">Welcome!</h1>
+        <p className="mt-4 text-white">
+          Join us and experience the best service.
+        </p>
+      </div>
+      <div className="flex flex-col items-center justify-center bg-white p-8">
+        <h2 className="text-2xl font-bold">Sign In</h2>
+        <form className="mt-6 w-full max-w-sm">
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
+          <button
+            type="submit"
+            className="w-full py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+const AuthPage6 = () => {
+  useEffect(() => {
+    gsap.from(".form-container", { opacity: 0, y: 50, duration: 1 });
+    gsap.to(".form-container", { opacity: 1, y: 50, duration: 1 });
+  }, []);
+
+  return (
+    <div className="flex flex-col  min-h-screen items-center justify-center bg-gray-100">
+      <h2>Animated</h2>
+      <div className="form-container p-8 bg-white rounded shadow-md">
+        <h2 className="text-3xl font-bold text-center">Sign Up</h2>
+        <form className="mt-6">
+          <input
+            type="text"
+            placeholder="Name"
+            className="w-full p-3 mt-4 border rounded-lg"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full p-3 mt-4 border rounded-lg"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full p-3 mt-4 border rounded-lg"
+          />
+          <button className="w-full py-3 mt-6 bg-blue-600 text-white rounded-lg">
+            Register
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+const AuthPage7 = () => {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-black">
+      <div className="p-8 w-full max-w-md bg-gray-800 rounded-lg shadow-lg">
+        <h2 className="text-3xl font-bold text-neon-green text-center">
+          Welcome Back!
+        </h2>
+        <form className="mt-6">
+          <input
+            type="email"
+            placeholder="Email"
+            className="w-full p-3 mt-4 bg-gray-900 border border-neon-green text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-neon-green"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full p-3 mt-4 bg-gray-900 border border-neon-green text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-neon-green"
+          />
+          <button
+            type="submit"
+            className="w-full mt-6 py-3 text-white bg-neon-green rounded-lg hover:bg-green-500"
+          >
+            Login
+          </button>
+        </form>
+        <p className="mt-4 text-center text-white">
+          Need an account?{" "}
+          <span className="text-neon-green cursor-pointer">Register</span>
+        </p>
+      </div>
     </div>
   );
 };

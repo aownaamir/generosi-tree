@@ -93,7 +93,7 @@ function Navbar() {
       </ul>
       {location.pathname === "/" && (
         <div className="h-full absolute top-0 right-5 flex justify-center items-center">
-          <Link to="portal">
+          <Link to="auth">
             <button className="w-[78px] h-9 lg:h-8 lg:w-[70px] text-[13px] bg-chat-green text-theme-background rounded-lg shadow-md font-semibold hover:bg-chat-greenH">
               Login
             </button>

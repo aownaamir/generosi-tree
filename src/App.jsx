@@ -11,6 +11,7 @@ import CommunityService from "./pages/CommunityService";
 import TeamVolunteer from "./pages/TeamVolunteer";
 import Dashboard from "./pages/Dashboard";
 import ChatHome from "./chat/ChatHome";
+import AuthPage from "./pages/AuthPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -20,6 +21,10 @@ function App() {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/auth",
+          element: <AuthPage />,
         },
         {
           path: "/portal",
