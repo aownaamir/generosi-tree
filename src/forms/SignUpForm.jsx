@@ -1,40 +1,28 @@
 function SignUpForm({ isLogIn, setIsLogIn }) {
   return (
-    <div className="flex flex-col items-center justify-center bg-white p-8">
-      <h2 className="text-2xl font-bold">Sign Up</h2>
-      <form className="mt-6 w-full max-w-sm">
-        <input
-          type="text"
-          placeholder="Name"
-          className="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          className="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          className="w-full p-3 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-        />
-        <button
-          type="submit"
-          className="w-full py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700"
-        >
-          Sign Up
-        </button>
-      </form>
-      <p className="mt-4 text-sm text-center text-gray-600">
-        {isLogIn ? "Don't have an account?" : "Already have an account?"}
-        <span
-          onClick={() => setIsLogIn(!isLogIn)}
-          className="ml-1 text-blue-500 cursor-pointer hover:underline"
-        >
-          {isLogIn ? "Sign Up" : "Sign In"}
-        </span>
-      </p>
-    </div>
+    <form className="mt-6 w-full max-w-sm">
+      <input
+        type="text"
+        placeholder="Name"
+        className="w-full p-3 mb-4 border border-slate-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        className="w-full p-3 mb-4 border border-slate-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        className="w-full p-3 mb-4 border border-slate-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
+      />
+      <button
+        type="submit"
+        className="w-full py-3 bg-chat-green text-white rounded-lg hover:bg-chat-greenH"
+      >
+        Sign Up
+      </button>
+    </form>
   );
 }
 

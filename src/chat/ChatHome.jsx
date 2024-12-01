@@ -8,6 +8,7 @@ import logo from "/images/logo.png";
 import { useState } from "react";
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import Triangle from "../ui/Triangle";
 
 const ChatHome = () => (
   <div className=" flex flex-col">
@@ -34,12 +35,13 @@ const ChatHome = () => (
     <AwarenessHero />
     <AwarenessHero2 />
     <AwarenessPage /> */}
-    <AuthPage />
+    {/* <AuthPage />
     <AuthPage2 />
     <AuthPage3 />
     <AuthPage4 />
     <AuthPage5 />
-    <AuthPage6 />
+    <AuthPage6 /> */}
+    {/* <Triangle /> */}
   </div>
 );
 

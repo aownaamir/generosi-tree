@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindClipPath from "tailwind-clip-path";
+
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      clipPath: {
+        curve: "polygon(0% 0%, 0% 100%, 10% 90%, 90% 10%, 100% 0%)",
+      },
       colors: {
         theme: {
           brown: "#765341",
@@ -27,5 +32,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindClipPath],
 };
