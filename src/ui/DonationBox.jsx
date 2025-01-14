@@ -8,7 +8,7 @@ import CountdownTimer from "./CountdownTimer";
 function DonationBox({ item }) {
   return (
     <div className="w-[290px] border border-l-4 border-chat-green p-6 rounded-lg shadow-md bg-white">
-      <h3 className="text-lg font-semibold text-green-700">{item.title}</h3>
+      <h3 className="text-lg font-semibold text-green-700">{item.name}</h3>
       <p className="h-[80px] text-sm text-gray-500 mt-2">{item.description}</p>
       <div className="flex justify-between items-center mt-5">
         <p className=" flex items-center gap-[7px]">

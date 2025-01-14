@@ -18,6 +18,7 @@ import Goal from "../svgs/Goal";
 import Handshake from "../svgs/Handshake";
 import Megaphone from "../svgs/Megaphone2";
 import Clipboard from "../svgs/Clipboard3";
+import Money from "../svgs/Money";
 import Charity from "../svgs/Charity1";
 import Volunteer from "../svgs/Volunteer";
 import Miscellaneous from "../svgs/Miscellaneous";
@@ -56,7 +57,7 @@ const departments = [
   {
     id: 0,
     name: "Donations",
-    svg: Charity,
+    svg: Money,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/donations",
@@ -80,7 +81,7 @@ const departments = [
   {
     id: 3,
     name: "Community Service",
-    svg: CommunityService,
+    svg: Charity,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla.",
     url: "/communityservice",
@@ -106,7 +107,7 @@ const departments = [
 const donations = [
   {
     id: 0,
-    title: "Winter 2024 Donation Drive",
+    name: "Winter 2024 Donation Drive",
     img: d1,
     description:
       "This winter, help the community by donating clothes, supporting education, and spreading warmth!",
@@ -123,7 +124,7 @@ const donations = [
   },
   {
     id: 1,
-    title: "Coming Soon",
+    name: "Coming Soon",
     img: "",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
@@ -138,7 +139,7 @@ const donations = [
   },
   {
     id: 2,
-    title: "Coming Soon",
+    name: "Coming Soon",
     img: "",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
@@ -153,7 +154,7 @@ const donations = [
   },
   {
     id: 2,
-    title: "Coming Soon",
+    name: "Coming Soon",
     img: "",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
@@ -168,7 +169,7 @@ const donations = [
   },
   {
     id: 2,
-    title: "Coming Soon",
+    name: "Coming Soon",
     img: "",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
@@ -183,7 +184,7 @@ const donations = [
   },
   {
     id: 2,
-    title: "Coming Soon",
+    name: "Coming Soon",
     img: "",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie tortor ut faucibus fringilla. Vivamus quis efficitur elit.",
