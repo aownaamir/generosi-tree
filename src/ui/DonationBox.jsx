@@ -33,14 +33,10 @@ function DonationBox({ item }) {
           <span className="text-lg text-chat-green">
             <ImStopwatch />
           </span>
-          {item.target ? (
-            <CountdownTimer
-              className="text-[13.2px] text-theme-brown"
-              target={item.target}
-            />
-          ) : (
-            <span className="text-[13.2px] text-theme-brown">N/A</span>
-          )}
+
+          <span className="text-[13.2px] text-theme-brown">
+            {item.timeLeft ? item.timeLeft : "N/A"}
+          </span>
         </p>
         <p className=" flex  gap-[7px]">
           <span className="text-lg text-chat-green">
@@ -51,7 +47,7 @@ function DonationBox({ item }) {
       </div>
       <div className="flex justify-between items-center mt-5">
         <span className="w-[100px] text-gray-400 text-sm">
-          Target: <br></br>Rs {item.amount}
+          Target: <br></br>Rs {item.targetAmount}
         </span>
         <a href={item.url} target="_blank">
           <button className="bg-chat-green text-white px-3 py-1 rounded-md hover:bg-chat-greenH float-end">
