@@ -12,8 +12,8 @@ function DonationCards() {
     async function fetchDonations() {
       try {
         setIsLoading(true);
-        const { donations } = await getAllDonations();
-        setDonations(donations);
+        const { data } = await getAllDonations();
+        setDonations(data.donations);
         console.log(donations);
       } catch (err) {
         console.log("Error recieved: ", err);
@@ -36,7 +36,7 @@ function DonationCards() {
       </div>
       <DonationCategories />
       {isLoading ? (
-        <p>Loading</p>
+        <p>Loading ...</p>
       ) : (
         <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-20">
           {donations?.map((item) => (
